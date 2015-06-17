@@ -1,4 +1,5 @@
 {
 	"files" : ["test.html"],
-	"assets": "assets"
+	"assets": "assets",
+	"newpages" : "/"
 }

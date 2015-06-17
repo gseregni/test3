@@ -1,7 +1,7 @@
 /*!
  * Default theme for Pingendo 
  * Homepage: http://pingendo.com  
- * Copyright 2015 Pingendo  
+ * Copyright 2015 Pingendo 
  * Licensed under MIT 
  * Based on Bootstrap v3.3.4
 */
@@ -26,18 +26,18 @@
 @gray : lighten(@gray-base, 33.5%); // #555
 @gray-light : lighten(@gray-base, 46.7%); // #777
 @gray-lighter : lighten(@gray-base, 93.5%); // #eee
-@brand-primary : #7A8288;
+@brand-primary : #3A3F44;
 @brand-success : #5cb85c;
-@brand-info : #5bc0de;
+@brand-info : #7A8288;
 @brand-warning : #f0ad4e;
 @brand-danger : #d9534f;
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 //** Background color for `<body>`.
-@body-bg : #272B30;
+@body-bg : white;
 //** Global text color on `<body>`.
-@text-color : #C8C8C8;
+@text-color : #272B30;
 //** Global textual link color.
 @link-color : @brand-primary;
 //** Link hover color set via `darken()` function.
@@ -728,6 +728,177 @@ monospace;
 // Utility classes
 @import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/utilities.less";
 @import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/responsive-utilities.less";
-@import "https://raw.githubusercontent.com/Pingendo/pingendo-bootstrap/gh-pages/less/pingendo-custom.less";
 
 /* PINGENDO COMMENT DO NOT REMOVE */
+
+
+/*!
+ * Pingendo customization for Bootstrap
+ * Homepage: http://pingendo.com
+ * Copyright 2015 Pingendo
+ * Licensed under MIT
+*/
+
+@border-radius-large: @border-radius-base * 1.25;
+@border-radius-small: @border-radius-base * 0.5;
+@navbar-margin-bottom: 0px;
+
+/* Google web fonts support */
+
+@import url('https://fonts.googleapis.com/css?family=@{headings-font-family}|@{font-family-base}');
+
+/* TODO: webkit need this why ?*/
+
+html,
+body {
+  height: 100%;
+}
+
+@text-inverse : contrast(@text-color);
+.text-inverse {
+  color: @text-inverse;
+}
+
+
+/* TODO: verify if we can touch only section */
+
+.jumbotron {
+  margin-bottom: 0px !important;
+  h1.text-primary {
+    color: @brand-primary !important;
+  }
+  h1.text-inverse {
+    color: @text-inverse !important;
+  }
+  h1.text-info {
+    color: @brand-info !important;
+  }
+  h1.text-success {
+    color: @brand-success !important;
+  }
+  h1.text-warning {
+    color: @brand-warning !important;
+  }
+  h1.text-danger {
+    color: @brand-danger !important;
+  }
+}
+
+.carousel .item img {
+  min-width: 100%;
+}
+
+// Base sections
+// --------------------------------------------------
+.section {
+  position: relative;
+  padding: @section-spacing 0px;
+  /*> .container > .row {
+    margin : @section-spacing 0px;
+  }*/
+  .background-image {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    &.background-image-fixed {
+      background-attachment: fixed;
+    }
+  }
+}
+
+// Alternate sections
+// --------------------------------------------------
+.section-primary {
+  background-color: @brand-primary !important;
+  color: @btn-primary-color;
+}
+
+.section-info {
+  background-color: @brand-info !important;
+  color: @btn-info-color;
+}
+
+.section-success {
+  background-color: @brand-success !important;
+  color: @btn-success-color;
+}
+
+.section-warning {
+  background-color: @brand-warning !important;
+  color: @btn-warning-color;
+}
+
+.section-danger {
+  background-color: @brand-danger !important;
+  color: @btn-warning-color;
+}
+
+.cover {
+  .jumbotron();
+  padding: 0px 0px;
+  background-color: transparent;
+  @media screen and (min-width: @screen-sm-min) {
+    padding: 0px;
+    .container &, .container-fluid & {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  overflow:hidden;
+  position:relative;
+  min-height: 100%;
+  .navbar {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    border: none;
+    background-color: transparent !important;
+    .navbar-nav li.active a {
+      background-color: transparent !important;
+    }
+    // Navbar toggle
+    //
+    // Custom button for toggling the `.navbar-collapse`, powered by the collapse
+    // JavaScript plugin.
+    .navbar-toggle {
+      border-color: transparent;
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+      .icon-bar {
+        background-color: @text-color;
+      }
+    }
+    &.navbar-inverse .navbar-toggle {
+      border-color: transparent;
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+      .icon-bar {
+        background-color: @text-inverse;
+      }
+    }
+  }
+  .cover-image {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    &.background-image-fixed, &.cover-image-fixed {
+      background-attachment: fixed;
+    }
+  }
+}
