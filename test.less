@@ -26,9 +26,9 @@
 @gray : lighten(@gray-base, 33.5%); // #555
 @gray-light : lighten(@gray-base, 46.7%); // #777
 @gray-lighter : lighten(@gray-base, 93.5%); // #eee
-@brand-primary : #3A3F44;
+@brand-primary : #337CBB;
 @brand-success : #5cb85c;
-@brand-info : #7A8288;
+@brand-info : #5bc0de;
 @brand-warning : #f0ad4e;
 @brand-danger : #d9534f;
 //== Scaffolding
@@ -37,7 +37,7 @@
 //** Background color for `<body>`.
 @body-bg : white;
 //** Global text color on `<body>`.
-@text-color : #272B30;
+@text-color : black;
 //** Global textual link color.
 @link-color : @brand-primary;
 //** Link hover color set via `darken()` function.
@@ -133,19 +133,19 @@ monospace;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 @btn-font-weight : normal;
-@btn-default-color : contrast(@btn-default-bg, @text-color, @text-inverse, 43%);
-@btn-default-bg : #fff;
+@btn-default-color : @text-color;
+@btn-default-bg : @body-bg;
 @btn-default-border : #ccc;
-@btn-primary-color : contrast(@btn-primary-bg, @text-color, @text-inverse, 43%);
+@btn-primary-color : white;
 @btn-primary-bg : @brand-primary;
 @btn-primary-border : darken(@btn-primary-bg, 5%);
-@btn-success-color : contrast(@btn-success-bg, @text-color, @text-inverse, 43%);
+@btn-success-color : white;
 @btn-success-bg : @brand-success;
 @btn-success-border : darken(@btn-success-bg, 5%);
-@btn-info-color : contrast(@btn-info-bg, @text-color, @text-inverse, 43%);
+@btn-info-color : white;
 @btn-info-bg : @brand-info;
 @btn-info-border : darken(@btn-info-bg, 5%);
-@btn-warning-color : contrast(@btn-warning-bg, @text-color, @text-inverse, 43%);
+@btn-warning-color : white;
 @btn-warning-bg : @brand-warning;
 @btn-warning-border : darken(@btn-warning-bg, 5%);
 @btn-danger-color : contrast(@btn-danger-bg, @text-color, @text-inverse, 43%);
@@ -181,7 +181,7 @@ monospace;
 //** Small `.form-control` height
 @input-height-small : (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 //** `.form-group` margin
-@form-group-margin-bottom : 15px;
+@form-group-margin-bottom: 15px;
 @legend-color : @gray-dark;
 @legend-border-color : #e5e5e5;
 //** Background color for textual input addons
@@ -228,8 +228,8 @@ monospace;
 @zindex-popover : 1060;
 @zindex-tooltip : 1070;
 @zindex-navbar-fixed : 1030;
-@zindex-modal-background : 1040;
-@zindex-modal : 1050;
+@zindex-modal-background: 1040;
+@zindex-modal: 1050;
 //== Media queries breakpoints
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
@@ -299,8 +299,8 @@ monospace;
 @navbar-padding-horizontal : floor((@grid-gutter-width / 2));
 @navbar-padding-vertical : ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height : 340px;
-@navbar-default-color : #C8C8C8;
-@navbar-default-bg : #3A3F44;
+@navbar-default-color : black;
+@navbar-default-bg : #f8f8f8;
 @navbar-default-border : darken(@navbar-default-bg, 6.5%);
 // Navbar links
 @navbar-default-link-color : contrast(@navbar-default-bg, @text-color, @text-inverse, 43%);
@@ -392,7 +392,7 @@ monospace;
 @jumbotron-bg : @gray-lighter;
 @jumbotron-heading-color : inherit;
 @jumbotron-font-size : ceil((@font-size-base * 1.5));
-@jumbotron-heading-font-size : ceil((@font-size-base * 4.5));
+@jumbotron-heading-font-size: ceil((@font-size-base * 4.5));
 //== Form states and alerts
 //
 //## Define colors for form feedback states and, by default, alerts.
@@ -677,7 +677,7 @@ monospace;
 //** Blockquote border color
 @blockquote-border-color : @gray-lighter;
 //** Page header border color
-@page-header-border-color : @gray-lighter;
+@page-header-border-color: @gray-lighter;
 //** Width of horizontal description list titles
 @dl-horizontal-offset : @component-offset-horizontal;
 //** Horizontal line color.
@@ -729,9 +729,6 @@ monospace;
 @import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/utilities.less";
 @import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.4/less/responsive-utilities.less";
 
-/* PINGENDO COMMENT DO NOT REMOVE */
-
-
 /*!
  * Pingendo customization for Bootstrap
  * Homepage: http://pingendo.com
@@ -753,6 +750,10 @@ html,
 body {
   height: 100%;
 }
+
+@section-spacing : 35px;
+
+/* text-inverse is deprecated */
 
 @text-inverse : contrast(@text-color);
 .text-inverse {
@@ -792,12 +793,9 @@ body {
 // --------------------------------------------------
 .section {
   position: relative;
-  padding: @section-spacing 0px;
-  /*> .container > .row {
-    margin : @section-spacing 0px;
-  }*/
+  padding: @section-spacing 0;
   .background-image {
-    z-index: -1;
+    z-index: 0;
     position: absolute;
     top: 0px;
     width: 100%;
@@ -815,30 +813,46 @@ body {
 .section-primary {
   background-color: @brand-primary !important;
   color: @btn-primary-color;
+  .background-image {
+    opacity: 0.5;
+  }
 }
 
 .section-info {
   background-color: @brand-info !important;
   color: @btn-info-color;
+  .background-image {
+    opacity: 0.5;
+  }
 }
 
 .section-success {
   background-color: @brand-success !important;
   color: @btn-success-color;
+  .background-image {
+    opacity: 0.5;
+  }
 }
 
 .section-warning {
   background-color: @brand-warning !important;
   color: @btn-warning-color;
+  .background-image {
+    opacity: 0.5;
+  }
 }
 
 .section-danger {
   background-color: @brand-danger !important;
   color: @btn-warning-color;
+  .background-image {
+    opacity: 0.5;
+  }
 }
 
 .cover {
   .jumbotron();
+  .section();
   padding: 0px 0px;
   background-color: transparent;
   @media screen and (min-width: @screen-sm-min) {
@@ -889,8 +903,9 @@ body {
       }
     }
   }
+  /* deprecated. use section background-image instead */
   .cover-image {
-    z-index: -1;
+    z-index: 0;
     position: absolute;
     top: 0px;
     width: 100%;
@@ -902,3 +917,6 @@ body {
     }
   }
 }
+
+
+/* PINGENDO COMMENT DO NOT REMOVE */
