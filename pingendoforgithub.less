@@ -37,7 +37,7 @@
 //** Background color for `<body>`.
 @body-bg : white;
 //** Global text color on `<body>`.
-@text-color : black;
+@text-color : #555;
 //** Global textual link color.
 @link-color : @brand-primary;
 //** Link hover color set via `darken()` function.
@@ -62,7 +62,7 @@ Consolas,
 "Courier New",
 monospace;
 @font-family-base : Lato;
-@font-size-base : 14px;
+@font-size-base : 16px;
 @font-size-large : ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small : ceil((@font-size-base * 0.85)); // ~12px
 @font-size-h1 : floor((@font-size-base * 2.6)); // ~36px
@@ -736,14 +736,13 @@ monospace;
   font-size: 50px;
 }
 
-.center-v {
-  padding: 80px 0px 0px 0px;
-}
-
 .faded {
   background: fade(@brand-primary, 10%);
+  padding: 35px 0px 0px 0px;
 }
 
 .shadow {
   box-shadow: 0px 0px 3px #444;
 }
+
+.ready {}
