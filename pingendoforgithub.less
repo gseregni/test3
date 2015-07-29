@@ -28,7 +28,7 @@
 @gray-lighter : lighten(@gray-base, 93.5%); // #eee
 @brand-primary : #00b0eb;
 @brand-success : #5cb85c;
-@brand-info : #5bc0de;
+@brand-info : #4a4c4e;
 @brand-warning : #f0ad4e;
 @brand-danger : #d9534f;
 //== Scaffolding
@@ -286,7 +286,7 @@ monospace;
 //** For `@screen-md-min` and up.
 @container-md : @container-desktop;
 // Large screen / wide desktop
-@container-large-desktop : (1140px + @grid-gutter-width);
+@container-large-desktop : @container-desktop;
 //** For `@screen-lg-min` and up.
 @container-lg : @container-large-desktop;
 //== Navbar
@@ -737,7 +737,6 @@ monospace;
 }
 
 .faded {
-  background: fade(@brand-primary, 10%);
   padding: 35px 0px 0px 0px;
 }
 
