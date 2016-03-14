@@ -4876,3 +4876,9 @@ a.text-danger:hover {
   .section-fill-height .container {
     width: 72.25rem;
     max-width: 72.25rem; } }
+
+.section-fill-height {
+  min-height: 100%;
+  height: auto; }
+  .section-fill-height img {
+    height: 50%; }
