@@ -9,9 +9,9 @@ $gray-light : #818a91 !default;
 $gray-lighter : #eceeef !default;
 $gray-lightest : #f7f7f9 !default;
 
-$brand-primary : #00b0eb; 
+$brand-primary : red;
 $brand-success : #5cb85c !default;
-$brand-info : #333;
+$brand-info : #896EB3;
 $brand-warning : #f0ad4e !default;
 $brand-danger : #d9534f !default;
 
@@ -44,8 +44,8 @@ $border-width : 1px !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg : #fff !default;
-$body-color : #373a3c !default;
+$body-bg : white;
+$body-color : #333;
 
 
 // Links
@@ -80,12 +80,3 @@ $headings-font-family : inherit !default;
 
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
-
-.section-fill-height {
-  min-height: 100%;
-  height: auto;
-  
-  img {
-    height:40%;
-  }
-}
