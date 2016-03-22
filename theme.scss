@@ -2,7 +2,7 @@
 // Colors
 //
 // Grayscale and brand colors for use across Bootstrap.
-
+ 
 $gray-dark : #373a3c !default;
 $gray : #55595c !default;
 $gray-light : #818a91 !default;
@@ -76,6 +76,15 @@ $font-size-sm : .875rem !default;
 $font-size-xs : .75rem !default;
 
 $headings-font-family : inherit !default; 
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 740px,
+  xl: 940px
+);
+
+
 
 
 @import 'bootstrap';
