@@ -4886,7 +4886,6 @@ a.text-danger:hover {
   }
 }*/
 .section-fill-height {
-  min-height: 100%;
-  height: auto; }
+  min-height: 100%; }
   .section-fill-height img {
-    height: 40%; }
+    max-width: 50%; }

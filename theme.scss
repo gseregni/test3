@@ -92,9 +92,8 @@ $container-max-widths: (
 
 .section-fill-height {
   min-height: 100%;
-  height: auto;
   
   img {
-    height:40%;
+	max-width: 50%;
   }
 }
