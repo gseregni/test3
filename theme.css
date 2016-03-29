@@ -1729,10 +1729,10 @@ input[type="checkbox"].disabled {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 740px; } }
+      max-width: 940px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 940px; } }
+      max-width: 1140px; } }
 
 .container-fluid {
   margin-left: auto;
@@ -4857,35 +4857,28 @@ a.text-danger:hover {
 .section.section-opaque-light {
   background-color: rgba(255, 255, 255, 0.7); }
 
-/*
 @media (min-width: 34em) {
   .section-fill-height .container {
     width: 34rem;
-    max-width: 34rem;
-  }
-}
+    max-width: 34rem; } }
 
 @media (min-width: 48em) {
   .section-fill-height .container {
     width: 45rem;
-    max-width: 45rem;
-  }
-}
+    max-width: 45rem; } }
 
 @media (min-width: 62em) {
   .section-fill-height .container {
     width: 60rem;
-    max-width: 60rem;
-  }
-}
+    max-width: 60rem; } }
 
 @media (min-width: 75em) {
   .section-fill-height .container {
     width: 72.25rem;
-    max-width: 72.25rem;
-  }
-}*/
+    max-width: 72.25rem; } }
+
 .section-fill-height {
-  min-height: 100%; }
+  min-height: 100%;
+  height: auto; }
   .section-fill-height img {
-    max-width: 50%; }
+    height: 40%; }
