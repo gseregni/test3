@@ -4889,8 +4889,5 @@ h1 small {
   font-size: inherit;
   font-weight: 100; }
 
-.section-fill-height {
-  min-height: 100%;
-  height: auto; }
-  .section-fill-height img {
-    height: 40%; }
+.container-fluid {
+  width: 100%; }
