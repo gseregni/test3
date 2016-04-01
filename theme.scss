@@ -86,11 +86,8 @@ h1 {
     font-weight: 100;
   }
 }
-.section-fill-height {
-  min-height: 100%;
-  height: auto;
-  
-  img {
-    height:40%;
-  }
+
+
+.container-fluid {
+  width: 100%;
 }
