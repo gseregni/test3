@@ -4857,28 +4857,37 @@ a.text-danger:hover {
 .section.section-opaque-light {
   background-color: rgba(255, 255, 255, 0.7); }
 
+/*
 @media (min-width: 34em) {
   .section-fill-height .container {
     width: 34rem;
-    max-width: 34rem; } }
+    max-width: 34rem;
+  }
+}
 
 @media (min-width: 48em) {
   .section-fill-height .container {
     width: 45rem;
-    max-width: 45rem; } }
+    max-width: 45rem;
+  }
+}
 
 @media (min-width: 62em) {
   .section-fill-height .container {
     width: 60rem;
-    max-width: 60rem; } }
+    max-width: 60rem;
+  }
+}
 
 @media (min-width: 75em) {
   .section-fill-height .container {
     width: 72.25rem;
-    max-width: 72.25rem; } }
+    max-width: 72.25rem;
+  }
+}*/
+h1 small {
+  font-size: inherit;
+  font-weight: 100; }
 
-.section-fill-height {
-  min-height: 100%;
-  height: auto; }
-  .section-fill-height img {
-    height: 40%; }
+.container-fluid {
+  width: 100%; }

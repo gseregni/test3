@@ -80,12 +80,14 @@ $headings-font-family : inherit !default;
 
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
-
-.section-fill-height {
-  min-height: 100%;
-  height: auto;
-  
-  img {
-    height:40%;
+h1 {
+  small {
+    font-size: inherit;
+    font-weight: 100;
   }
+}
+
+
+.container-fluid {
+  width: 100%;
 }
