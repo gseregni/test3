@@ -30,27 +30,29 @@
       color: #ddd;
     }
   </style>
+
+
 </head>
 
 <body>
   <div class="bg-inverse p-y-3 section section-fill-height text-xs-center">
-    <p class="lead m-y-2 bottom">
-      <a href="faq-desktop.html">Faq</a>-&nbsp;
-      <a href="#">Developments board</a>&nbsp;-
-      <a href="#" class="text-primary">Looking for older version ?</a>
+    <p class="bottom lead m-y-2">
+      <a href="faq-desktop.html">Faq</a>&nbsp;-&nbsp;
+      <a href="#">Developments board</a>&nbsp;-&nbsp;
+      <a href="v3/index.html" class="text-primary">Looking for older version ?</a>
     </p>
     <div class="container">
       <div class="row">
         <div class="col-md-12 p-y-3">
-          <img src="logo-forgh.png?2" class="center-block m-y-2">
-          <h1 class="display-4 pi-draggable pi-item text-inverse">Pingendo Desktop</h1>
+
+          <h1 class="display-4 pi-draggable pi-item text-inverse">Pingendo</h1>
           <p class="lead m-y-2">Desktop Bootstrap builder.
             <b>&nbsp;Now for Bootstrap 4.</b>
             <br>
             <br>
           </p>
           <div class="btn-group btn-group-lg">
-            <a href="http://v4.pingendo.com/playground.html" class="btn btn-primary">Try now in Chrome</a>
+            <a href="http://v4.pingendo.com/playground.html" class="btn btn-primary" id="playgroundBtn">Try now</a>
             <div class="btn-group">
               <a class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown"> Download beta </a>
               <div class="dropdown-menu">
@@ -68,6 +70,7 @@
   </div>
   <div class="bg-primary p-y-3 section section-fill-height">
     <p class="lead m-y-2 bottom">
+      <a href="#">FAQ</a>&nbsp;-&nbsp;
       <a href="#">Developments board</a>
     </p>
     <div class="container">
@@ -84,15 +87,38 @@
           </p>
           <p class="lead"></p>
           <div class="btn-group btn-group-lg m-y-2">
-            <a href="faq-github.html" class="btn btn-info" data-target="#download">FAQ</a>
-            <a href="http://v4.pingendo.com/github.html" class="btn btn-info">Login with Github&nbsp;</a>
+
+            <a href="http://v4.pingendo.com/github.html" class="btn btn-info">Login with Github *</a>
           </div>
+          <p class="">* Free during beta</p>
         </div>
       </div>
     </div>
   </div>
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var isChrome = /Chrome/.test(navigator.userAgent) ;
+			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+             	console.log("IS CHROM ", isChrome); 
+			if (isChrome) {
+
+        $("#playgroundBtn").html("Try now in Chrome");
+      }
+      else if (isSafari)
+        $("#playgroundBtn").html("Try now in Safari");
+
+
+    });
+  </script>
+
+
+
+
+
+
+
 
 
 </body>
