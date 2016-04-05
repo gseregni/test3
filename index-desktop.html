@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <link rel="icon" href="pingendo.ico">
+  <title>Pingendo - Bootstrap 4 builder</title>
+  <meta name="keywords" content="Bootstrap 4 builder">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="theme.css" rel="stylesheet" type="text/css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav class="bg-inverse navbar navbar-full navbar-dark">
+    <a class="navbar-brand" href="#">Pingendo</a>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Desktop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">For Github</a>
+      </li>
+
+      <li class="nav-item m-l-2">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="bg-inverse p-y-3 section text-xs-center">
+    <div class="container m-y-3 p-y-3">
+      <div class="row">
+        <div class="col-md-12 p-y-3">
+          <h1 class="display-4 pi-draggable pi-item text-inverse">Pingendo</h1>
+          <p class="lead m-y-2">Desktop Bootstrap site builder.
+            <b>&nbsp;Now for Bootstrap 4.</b>
+            <br>
+            <br>
+          </p>
+          <div class="btn-group btn-group-lg">
+            <a href="http://v4.pingendo.com/playground.html" class="btn btn-primary" id="playgroundBtn" target="_blank">Try now</a>
+            <div class="btn-group">
+              <a class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown"> Download beta </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-osx.dmg">MAC</a>
+                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-win64.zip">Windows 64bit</a>
+                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-win32.zip">Windows 32bit</a>
+                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-linux32.zip">Linux 32bit</a>
+                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-linux64.zip">Linux 64bit</a>
+              </div>
+            </div>
+          </div>&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container m-y-3 p-x-3 p-y-3">
+
+      <div class="m-y-3 row">
+        <div class="col-md-12">
+          <div class="m-y-2 row">
+            <div class="col-md-6 text-xs-left">
+
+              <h1>Dead-simple and fast</h1>
+
+
+
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua&nbsp;Ut enim ad minim veniam, quis nostrud</p>
+        </div>
+      </div>
+      <div class="m-y-3 row">
+        <div class="col-md-12">
+          <h1>Generate plain HTML and SASS&nbsp;</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua&nbsp;Ut enim ad minim veniam, quis nostrud</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-info p-y-3 section">
+    <div class="container m-y-3">
+      <div class="row">
+        <div class="col-md-8">
+
+          <h1 class="display-4">And for your clients<br>Pingendo for Github&nbsp;</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-primary p-y-3 section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xs-4">
+
+        </div>
+        <div class="col-xs-4 text-xs-center col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+          <a><i class="fa fa-5x fa-fw fa-facebook"></i></a><a><i class="fa fa-5x fa-fw fa-twitter"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+                                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                             	console.log("IS CHROM ", isChrome); 
+                                                			if (isChrome) {
+                                                
+                                                        $("#playgroundBtn").html("Try now in Chrome");
+                                                      }
+                                                      else if (isSafari)
+                                                        $("#playgroundBtn").html("Try now in Safari");
+                                                
+                                                
+                                                    });
+  </script>
+  <script>
+    var _gaq = _gaq || [];
+                                                _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                                _gaq.push(['_trackPageview']);
+                                              
+                                                (function() {
+                                                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                                })();
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
