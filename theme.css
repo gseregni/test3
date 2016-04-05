@@ -4891,3 +4891,30 @@ h1 small {
 
 .container-fluid {
   width: 100%; }
+
+.display-4 {
+  font-size: 50px; }
+
+.section {
+  position: relative; }
+
+.bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  text-align: center; }
+
+.bottom a:hover {
+  color: white; }
+
+.section.bg-primary a {
+  color: white; }
+
+.btn-primary.disabled {
+  text-decoration: line-through !important;
+  background-color: #00b0eb !important;
+  opacity: 1; }
+
+.section-fill-height {
+  min-height: 640px; }
