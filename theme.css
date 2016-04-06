@@ -4885,7 +4885,7 @@ a.text-danger:hover {
     max-width: 72.25rem;
   }
 }*/
-h1 {
+h1, h2 {
   font-weight: 200; }
 
 .container-fluid {
