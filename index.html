@@ -35,12 +35,12 @@
     <div class="container">
       <div class="m-y-3 p-y-3 row">
         <div class="col-md-12 p-y-3">
-          <h1 class="display-4 pi-draggable pi-item text-inverse">Pingendo</h1>
-          <p class="lead m-y-2">Bootstrap site builder for developers and humans.
+          <h1 class="display-3 pi-draggable pi-item text-inverse">Pingendo</h1>
+          <h2 class=" m-y-2">Bootstrap site builder for developers and humans.
             <b>&nbsp;Now for Bootstrap 4.</b>
             <br>
             <br>
-          </p>
+          </h2>
           <a href="http://v4.pingendo.com/playground.html" class="btn btn-lg btn-primary" id="playgroundBtn" target="_blank">Try now in Chrome</a>
         </div>
       </div>
@@ -50,9 +50,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="m-y-3 text-xs-center">Building web sites requires developers but also the others.&nbsp;For this
-                            reason we created 2 different versions of the same epic WYSIWYG editor that make them work together.<br>
-                        </h2>
+          <p class="lead m-y-3 text-xs-center">Building web sites requires developers but also the others.&nbsp;For this reason we created 2 different versions of the same epic WYSIWYG editor that make them work together.
+            <br>
+          </p>
         </div>
       </div>
       <div class="row">
@@ -119,30 +119,34 @@
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-                                              var isChrome = /Chrome/.test(navigator.userAgent) ;
-                                        			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-                                                     	console.log("IS CHROM ", isChrome); 
-                                        			if (isChrome) {
-                                        
-                                                $("#playgroundBtn").html("Try now in Chrome");
-                                              }
-                                              else if (isSafari)
-                                                $("#playgroundBtn").html("Try now in Safari");
-                                        
-                                        
-                                            });
+                                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                             	console.log("IS CHROM ", isChrome); 
+                                                			if (isChrome) {
+                                                
+                                                        $("#playgroundBtn").html("Try now in Chrome");
+                                                      }
+                                                      else if (isSafari)
+                                                        $("#playgroundBtn").html("Try now in Safari");
+                                                
+                                                
+                                                    });
   </script>
   <script>
     var _gaq = _gaq || [];
-                                        _gaq.push(['_setAccount', 'UA-29443235-1']);
-                                        _gaq.push(['_trackPageview']);
-                                      
-                                        (function() {
-                                          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                                          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                                          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                                        })();
+                                                _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                                _gaq.push(['_trackPageview']);
+                                              
+                                                (function() {
+                                                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                                })();
   </script>
+
+
+
+
 
 
 </body>
