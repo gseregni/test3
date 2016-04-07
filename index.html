@@ -4,7 +4,6 @@
   <link rel="icon" href="pingendo.ico">
   <title>Pingendo - Bootstrap 4 builder</title>
   <meta name="keywords" content="Bootstrap 4 builder">
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -15,59 +14,104 @@
 </head>
 
 <body>
-  <div class="bg-inverse p-y-3 section section-fill-height text-xs-center">
+  <nav class="bg-info navbar navbar-full navbar-dark ">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="bg-inverse p-y-3 section text-xs-center">
     <div class="container">
-      <div class="row">
+      <div class="m-y-3 p-y-3 row">
         <div class="col-md-12 p-y-3">
           <h1 class="display-4 pi-draggable pi-item text-inverse">Pingendo</h1>
-          <p class="lead m-y-2">Desktop Bootstrap builder.
+          <p class="lead m-y-2">Bootstrap site builder for developers and humans.
             <b>&nbsp;Now for Bootstrap 4.</b>
             <br>
             <br>
           </p>
-          <div class="btn-group btn-group-lg">
-            <a href="http://v4.pingendo.com/playground.html" class="btn btn-primary" id="playgroundBtn" target="_blank">Try now</a>
-            <div class="btn-group">
-              <a class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown"> Download beta </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-osx.dmg">MAC</a>
-                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-win64.zip">Windows 64bit</a>
-                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-win32.zip">Windows 32bit</a>
-                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-linux32.zip">Linux 32bit</a>
-                <a class="dropdown-item" href="http://www.pingendo.com/beta/pingendo-4-beta-linux64.zip">Linux 64bit</a>
-              </div>
-            </div>
-          </div>
+          <a href="http://v4.pingendo.com/playground.html" class="btn btn-lg btn-primary" id="playgroundBtn" target="_blank">Try now in Chrome</a>
         </div>
-        <p class="bottom lead m-y-3">
-          <a href="faq-desktop.html">Faq</a>&nbsp;-&nbsp;
-          <a href="https://trello.com/b/YdLvr2W8/pingendo-development-board" target="_blank">Developments board</a>
-        </p>
       </div>
     </div>
   </div>
-  <div class="bg-primary p-y-3 section section-fill-height" id="forgithub">
+  <div class="p-y-3 section section-fill-height">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-xs-center">
-          <div class="row" draggable="true">
-            <div class="col-lg-10   col-lg-offset-1">
-              <img src="logo-forgh.png?2" class="center-block m-y-2">
+        <div class="col-md-12">
+          <h2 class="m-y-3 text-xs-center">Building web sites requires developers but also the others.&nbsp;For this
+                            reason we created 2 different versions of the same epic WYSIWYG editor.
+                            <br>
+                        </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-y-3 text-xs-center p-r-3">
+          <div class="card m-x-3">
+            <div class="card-block">
+              <h2 class="m-t-2">A desktop one for developers&nbsp;
+                                    <br>
+                                    <br>
+                                </h2>
+              <img src="logo-forgh.png?2" class="p-a-3 bg-primary center-block img-circle m-y-2">
+              <div class="btn-group btn-group-lg m-y-2">
+                <a href="http://v4.pingendo.com/github.html" class="btn btn-primary" target="_blank">Download for Mac</a>
+              </div>
+            </div>
+            <div class="card-block">
+              <a href="#" class="card-link">Read more</a>
             </div>
           </div>
-          <h1 class="display-4">Pingendo for Github</h1>
-          <p class="lead m-y-2">Online Bootstrap 4 builder for teams and clients.
-            <br>
-          </p>
-          <p class="lead"></p>
-          <div class="btn-group btn-group-lg m-y-2">
-            <a href="http://v4.pingendo.com/github.html" class="btn btn-info" target="_blank">Login with Github - Free during beta</a>
-          </div>
+          <p></p>
         </div>
-        <p class="lead m-y-2 bottom">
-          <a href="faq-github.html">FAQ</a>&nbsp;-&nbsp;
-          <a href="https://trello.com/b/YdLvr2W8/pingendo-development-board" target="_blank">Developments board</a>
-        </p>
+        <div class="col-md-6 p-y-3 text-xs-center p-l-3">
+          <div class="card m-x-3">
+            <div class="card-block">
+              <h2 class="m-t-2">Online and integrated with Github for teams and clients</h2>
+              <h1 class=""></h1>
+              <img src="logo-forgh.png?2" class="p-a-3 bg-primary center-block img-circle m-y-2">
+              <div class="btn-group btn-group-lg m-y-2">
+                <a href="http://v4.pingendo.com/github.html" class="btn btn-primary" target="_blank">Login with Github&nbsp;</a>
+              </div>
+              <div class="btn-group btn-group-lg m-y-2"></div>
+            </div>
+            <div class="card-block">
+              <a href="#" class="card-link">Read more</a>
+            </div>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-primary p-y-3 section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead m-y-3 text-xs-center">about "We develop Pingendo for the Bootstrap community since 2014. You can trust us."</p>
+        </div>
+      </div>
+      <div class="row text-xs-center">
+        <div class="col-xs-4">
+          <a><i class="fa fa-5x fa-fw fa-facebook"></i></a>
+        </div>
+        <div class="col-xs-4">
+          <a><i class="fa fa-5x fa-fw fa-twitter"></i></a>
+        </div>
+        <div class="col-xs-4">
+          <a><i class="fa fa-5x fa-fw fa-instagram"></i></a>
+        </div>
       </div>
     </div>
   </div>
@@ -76,34 +120,32 @@
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-                      var isChrome = /Chrome/.test(navigator.userAgent) ;
-                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-                             	console.log("IS CHROM ", isChrome); 
-                			if (isChrome) {
-                
-                        $("#playgroundBtn").html("Try now in Chrome");
-                      }
-                      else if (isSafari)
-                        $("#playgroundBtn").html("Try now in Safari");
-                
-                
-                    });
+                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                             	console.log("IS CHROM ", isChrome); 
+                                			if (isChrome) {
+                                
+                                        $("#playgroundBtn").html("Try now in Chrome");
+                                      }
+                                      else if (isSafari)
+                                        $("#playgroundBtn").html("Try now in Safari");
+                                
+                                
+                                    });
   </script>
-
-
-
-
   <script>
     var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-29443235-1']);
-                _gaq.push(['_trackPageview']);
-              
-                (function() {
-                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
+                                _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                _gaq.push(['_trackPageview']);
+                              
+                                (function() {
+                                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                })();
   </script>
+
+
 </body>
 
 </html>
