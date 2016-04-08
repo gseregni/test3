@@ -36,8 +36,9 @@
       <div class="m-y-3 p-y-3 row">
         <div class="col-md-12 p-y-3">
           <h1 class="display-3 pi-draggable pi-item text-inverse">Pingendo</h1>
-          <h4 class="">Bootstrap site builder for developers and humans. &nbsp;Now for Bootstrap
-                            4.&nbsp;</h4>
+          <h4 class="">Website builder for developers and humans. &nbsp;
+                            <div>Works with Bootstrap 4 and Github</div>
+                        </h4>
           <a href="http://v4.pingendo.com/playground.html" class="btn btn-lg btn-primary m-y-3" id="playgroundBtn" target="_blank">Try now in Chrome</a>
         </div>
       </div>
@@ -48,13 +49,16 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="col-md-12">
-            <h2 class="m-y-3 p-y-3">Efficient collaboration between developers and non-developers for a great communication.</h2>
+            <h2 class="m-y-3 p-y-3">Efficient collaboration between developers and non-developers for a great
+                                communication</h2>
             <div class="p-y-3 row" draggable="true">
               <div class="col-lg-4">
                 <h2 class="">Developers</h2>
                 <p class="">Developers have the privilege to iterate on real pages in the browser.&nbsp;
-                  <br>Pingendo extend this feature to non-devs.
-                  <br>Thus, they become more independent and take care of wording themselves, relying on dev for coding only.</p>
+                  <br>Pingendo extends this privilege to non-devs.
+                  <br>This means a more independent team, that relies on devs for coding only.
+                  <br>
+                </p>
                 <p class=""></p>
               </div>
               <div class="col-lg-4">
@@ -68,12 +72,12 @@
               </div>
               <div class="col-lg-4">
                 <h2 class="">Together</h2>
-                <p class="text-xs-left">Pingendo is for teams with at least one dev involved.&nbsp;
-                  <br>Dev codes and&nbsp;manages everyone and everything on Github, the most adopted revision control system.
+                <p class="text-xs-left">Pingendo is for teams with at least one developer involved.&nbsp;
+                  <br>He/she codes and&nbsp;manages everyone and everything on Github, the most adopted revision control system.
                   <br>Non developers iterate on webpages, each one according to its own role and skill.</p>
               </div>
             </div>
-            <h2 class="p-y-3 text-xs-center">Two dedicated tools to keep everyone in the loop.&nbsp;</h2>
+            <h2 class="p-y-3 text-xs-center">Two dedicated tools to keep everyone in the loop&nbsp;</h2>
           </div>
         </div>
       </div>
@@ -88,7 +92,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 text-xs-center">
-          <p class="lead">Desktop version, so to work on the plain HTML source with the abitual developer's toolset.
+          <p class="lead">Desktop version. Work on the generated vanilla Bootstrap HTML/CSS with the abitual developer's toolset.
             <a href="#">More...</a>
           </p>
           <a href="#" class="btn btn-lg btn-primary-outline m-y-3">Download for mac</a>
@@ -106,7 +110,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 text-xs-center">
-          <p class="lead">Online version, to take non developers on Github, the developers home.&nbsp;
+          <p class="lead">Online version. Take non developers on Github, the developers home.&nbsp;
             <a href="#">More...</a>
           </p>
           <a href="#" class="btn btn-lg btn-primary-outline m-y-3">Login with Github</a>
@@ -120,7 +124,8 @@
       <div class="row">
         <div class="col-md-12">
           <h4 class="text-xs-center">About us</h4>
-          <p class="lead text-xs-center">We develop Pingendo for the Bootstrap community since 2014. Soon a premium plan for faster improvements. You can trust us.</p>
+          <p class="lead text-xs-center">We develop Pingendo for the Bootstrap community since 2014. &nbsp;You can trust us.&nbsp;
+            <br>Soon a premium plan for faster improvements.</p>
         </div>
       </div>
       <div class="p-y-3 row text-xs-center">
@@ -141,29 +146,29 @@
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-                                                                                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
-                                                                                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-                                                                                                             	console.log("IS CHROM ", isChrome); 
-                                                                                                			if (isChrome) {
-                                                                                                
-                                                                                                        $("#playgroundBtn").html("Try now in Chrome");
-                                                                                                      }
-                                                                                                      else if (isSafari)
-                                                                                                        $("#playgroundBtn").html("Try now in Safari");
-                                                                                                
-                                                                                                
-                                                                                                    });
+                                                                                                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                                                                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                                                                                             	console.log("IS CHROM ", isChrome); 
+                                                                                                                			if (isChrome) {
+                                                                                                                
+                                                                                                                        $("#playgroundBtn").html("Try now in Chrome");
+                                                                                                                      }
+                                                                                                                      else if (isSafari)
+                                                                                                                        $("#playgroundBtn").html("Try now in Safari");
+                                                                                                                
+                                                                                                                
+                                                                                                                    });
   </script>
   <script>
     var _gaq = _gaq || [];
-                                                                                                _gaq.push(['_setAccount', 'UA-29443235-1']);
-                                                                                                _gaq.push(['_trackPageview']);
-                                                                                              
-                                                                                                (function() {
-                                                                                                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                                                                                                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                                                                                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                                                                                                })();
+                                                                                                                _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                                                                                                _gaq.push(['_trackPageview']);
+                                                                                                              
+                                                                                                                (function() {
+                                                                                                                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                                                                                                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                                                                                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                                                                                                })();
   </script>
 
 
