@@ -36,7 +36,7 @@
       <div class="m-y-3 p-y-3 row">
         <div class="col-md-12 p-y-3">
           <h1 class="display-3 pi-draggable pi-item text-inverse">Pingendo</h1>
-          <h3 class=" m-y-2">Bootstrap site builder for developers and humans.</h3>
+          <h3 class=" m-y-2">Static site builder for developers and their clients. &nbsp;<br><div>Works with Bootstrap 4 and Github</div></h3>
           <a href="http://v4.pingendo.com/playground.html" class="btn btn-lg btn-primary" id="playgroundBtn" target="_blank">Try now in Chrome</a>
         </div>
       </div>
@@ -46,25 +46,27 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="display-4 m-y-3 text-xs-center">Pingendo fits your workflow</h1>
+          <h1 class="display-4 m-y-3 text-xs-center">Two dedicated tool to keep everyone in the loop</h1>
+          <p></p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 p-y-3 text-xs-center p-r-3">
           <div class="card m-x-3">
             <div class="card-block">
-              <h2 class="m-t-2">Desktop
-                                    <br>
+              <h2 class="m-t-2 text-xs-left">For developers &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
                                 </h2>
-              <p class="">For developers</p><a href="#" class="card-link lead">Read more</a>
+              <p>Build clean Bootstrap HTML and SASS markup fast.
+                <br>Visual editor with acces real-time code editor.
+                <br>
+              </p>
+              <a href="#" class="card-link lead">Read more</a>
               <img src="logo-forgh.png?2" class="p-a-3 bg-primary center-block img-circle m-y-2">
               <div class="btn-group btn-group-lg m-y-2">
                 <a href="http://v4.pingendo.com/github.html" class="btn btn-primary" target="_blank">Download for Mac</a>
               </div>
             </div>
-            <div class="card-block">
-
-            </div>
+            <div class="card-block"></div>
           </div>
           <p></p>
         </div>
@@ -72,7 +74,8 @@
           <div class="card m-x-3">
             <div class="card-block">
               <h2 class="m-t-2">for Github</h2>
-              <p class="">For clients, stakeholders and content-makers</p><a href="#" class="card-link lead">Read more</a>
+              <p class="">For clients, stakeholders and content-makers</p>
+              <a href="#" class="card-link lead">Read more</a>
               <h1 class=""></h1>
               <img src="logo-forgh.png?2" class="p-a-3 bg-primary center-block img-circle m-y-2">
               <div class="btn-group btn-group-lg m-y-2">
@@ -80,18 +83,41 @@
               </div>
               <div class="btn-group btn-group-lg m-y-2"></div>
             </div>
-            <div class="card-block">
-
-            </div>
+            <div class="card-block"></div>
           </div>
           <p></p>
         </div>
-
       </div>
+
+    </div>
+  </div>
+  <div class="p-y-3 section text-xs-center">
+    <div class="container">
       <div class="row">
+        <div class="col-md-3">
+          <i class="fa fa-5x fa-fw fa-star m-y-1 m-y-lg text-primary"></i>
+          <h1>For developers</h1>
 
+        </div>
+        <div class="col-md-3">
+          <i class="fa fa-5x fa-fw fa-heart m-y-1 m-y-lg text-primary"></i>
+          <h1>Non developers</h1>
+          <p>The easy way for developer that want to share wi non deve like content-makers.
+            <br>welcome iteration role skill</p>
+        </div>
+        <div class="col-md-3 ">
+          <i class="fa fa-5x fa-fw fa-heart m-y-1 m-y-lg text-primary"></i>
+          <h1>Non developers</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua&nbsp;Ut enim ad minim veniam, quis nostrud</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa fa-5x fa-cloud fa-fw m-y-1 m-y-lg text-primary"></i>
+          <h1>Collaboration</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua&nbsp;Ut enim ad minim veniam, quis nostrud</p>
+        </div>
       </div>
-
     </div>
   </div>
   <div class="bg-primary p-y-3 section">
@@ -119,29 +145,29 @@
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-                                                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
-                                                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-                                                                             	console.log("IS CHROM ", isChrome); 
-                                                                			if (isChrome) {
-                                                                
-                                                                        $("#playgroundBtn").html("Try now in Chrome");
-                                                                      }
-                                                                      else if (isSafari)
-                                                                        $("#playgroundBtn").html("Try now in Safari");
-                                                                
-                                                                
-                                                                    });
+                                                                              var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                                        			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                                                     	console.log("IS CHROM ", isChrome); 
+                                                                        			if (isChrome) {
+                                                                        
+                                                                                $("#playgroundBtn").html("Try now in Chrome");
+                                                                              }
+                                                                              else if (isSafari)
+                                                                                $("#playgroundBtn").html("Try now in Safari");
+                                                                        
+                                                                        
+                                                                            });
   </script>
   <script>
     var _gaq = _gaq || [];
-                                                                _gaq.push(['_setAccount', 'UA-29443235-1']);
-                                                                _gaq.push(['_trackPageview']);
-                                                              
-                                                                (function() {
-                                                                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                                                                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                                                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                                                                })();
+                                                                        _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                                                        _gaq.push(['_trackPageview']);
+                                                                      
+                                                                        (function() {
+                                                                          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                                                          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                                                          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                                                        })();
   </script>
 
 
