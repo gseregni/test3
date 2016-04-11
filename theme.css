@@ -3796,7 +3796,7 @@ html {
   width: device-width; }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
   -webkit-tap-highlight-color: transparent; }
 
 body {
@@ -4885,7 +4885,7 @@ a.text-danger:hover {
     max-width: 72.25rem;
   }
 }*/
-h1, h2 {
+h1, h2, h3 {
   font-weight: 200; }
 
 .container-fluid {
