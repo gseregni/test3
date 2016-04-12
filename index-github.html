@@ -31,7 +31,7 @@
       </li>
     </ul>
   </nav>
-  <div class="p-y-3 section text-xs-center">
+  <div class="p-y-3 section section-fill-height text-xs-center">
     <div class="container">
       <div class="m-y-3 p-y-3 row">
         <div class="col-md-12 p-y-3">
@@ -39,18 +39,17 @@
           <h3 class="m-y-3">For developers who wants make non-developers contribute on prototypes
                             and static sites</h3>
           <a href="http://v4.pingendo.com/playground.html" class="btn btn-lg btn-primary" id="playgroundBtn" target="_blank">Login with Github</a>
-
         </div>
       </div>
     </div>
   </div>
-  <div class="p-y-3 section text-xs-center">
+  <div class="p-y-3 section section-fill-height text-xs-center">
     <div class="container">
       <div class="m-b-2 row">
         <div class="col-md-4">
           <i class="fa fa-3x fa-fw fa-thumbs-o-up  m-y-1 m-y-lg text-primary"></i>
           <h4>Super simple</h4>
-          <p>Ideal for clients, stakeholders, content makers</p>
+          <p>Ideal for clients, stakeholders and content makers who are not&nbsp;</p>
         </div>
         <div class="col-md-4">
           <i class="fa fa-3x  fa-paint-brush m-y-1 m-y-lg text-primary"></i>
@@ -71,7 +70,7 @@
             <br>(During beta just Chrome and Safari are supported)</p>
         </div>
         <div class="col-md-4  ">
-          <i class="fa fa-5x fa-fw fa-heart m-y-1 m-y-lg text-primary"></i>
+          <i class="fa fa-5x fa-fw m-y-1 m-y-lg text-primary fa-anchor"></i>
           <h4>Safe</h4>
           <p>Safe collaboration using Github. History</p>
         </div>
@@ -83,7 +82,6 @@
       </div>
     </div>
   </div>
-
   <div class="bg-primary p-y-3 section">
     <div class="container">
       <div class="row">
@@ -109,29 +107,29 @@
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-                                                                                                              var isChrome = /Chrome/.test(navigator.userAgent) ;
-                                                                                                        			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-                                                                                                                     	console.log("IS CHROM ", isChrome); 
-                                                                                                        			if (isChrome) {
-                                                                                                        
-                                                                                                                $("#playgroundBtn").html("Try now in Chrome");
-                                                                                                              }
-                                                                                                              else if (isSafari)
-                                                                                                                $("#playgroundBtn").html("Try now in Safari");
-                                                                                                        
-                                                                                                        
-                                                                                                            });
+                                                                                                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                                                                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                                                                                             	console.log("IS CHROM ", isChrome); 
+                                                                                                                			if (isChrome) {
+                                                                                                                
+                                                                                                                        $("#playgroundBtn").html("Try now in Chrome");
+                                                                                                                      }
+                                                                                                                      else if (isSafari)
+                                                                                                                        $("#playgroundBtn").html("Try now in Safari");
+                                                                                                                
+                                                                                                                
+                                                                                                                    });
   </script>
   <script>
     var _gaq = _gaq || [];
-                                                                                                        _gaq.push(['_setAccount', 'UA-29443235-1']);
-                                                                                                        _gaq.push(['_trackPageview']);
-                                                                                                      
-                                                                                                        (function() {
-                                                                                                          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                                                                                                          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                                                                                                          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                                                                                                        })();
+                                                                                                                _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                                                                                                _gaq.push(['_trackPageview']);
+                                                                                                              
+                                                                                                                (function() {
+                                                                                                                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                                                                                                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                                                                                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                                                                                                })();
   </script>
 
 
