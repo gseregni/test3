@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <link rel="icon" href="pingendo.ico">
+  <title>Pingendo - Bootstrap 4 builder</title>
+  <meta name="keywords" content="Bootstrap 4 builder">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="theme.css" rel="stylesheet" type="text/css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav class="bg-info navbar navbar-full navbar-dark ">
+    <a class="navbar-brand" href="#">Pingendo</a>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item">
+        <a class="active nav-link" href="#">Desktop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">for Github</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="bg-info p-y-3 section section-fill-height text-xs-center">
+    <div class="container">
+      <div class="m-y-3 p-y-3 row">
+        <div class="col-md-12 p-y-3">
+          <h1 class="display-3 pi-draggable pi-item">Pingendo</h1>
+          <h3 class="m-y-3">Desktop Bootstrap builder. Now for Bootstrap 4</h3>
+
+          <a href="http://v4.pingendo.com/playground.html" class="btn btn-lg btn-primary" id="playgroundBtn" target="_blank">Try now in Chrome</a><a href="http://v4.pingendo.com/playground.html" class="btn btn-lg btn-primary m-l-1" id="playgroundBtn"
+          target="_blank">Download for OSX</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-y-3 section section-fill-height text-xs-center">
+    <div class="container">
+      <div class="m-b-2 row">
+
+        <div class="col-md-6">
+          <i class="fa fa-3x  fa-paint-brush m-y-1 m-y-lg text-primary"></i>
+          <h4>Built for productivity</h4>
+          <p>Create quality HTML prototypes fast, using Bootstrap and SASS</p>
+        </div>
+        <div class="col-md-6   ">
+          <i class="fa fa-3x fa-fw m-y-1 m-y-lg text-primary fa-github"></i>
+          <h4>Code quality first</h4>
+          <p>Generate only clean Bootstrap 4 HTML and SASS markup
+          </p>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <i class="fa fa-3x  fa-paint-brush m-y-1 m-y-lg text-primary"></i>
+          <h4>Design and code</h4>
+          <h4></h4>
+          <p>Editor versatile adatto sia alla semplice modifica di testi ed immagini che allo sviluppo.</p>
+        </div>
+        <div class="col-md-6   ">
+          <i class="fa fa-3x fa-fw m-y-1 m-y-lg text-primary fa-code-fork"></i>
+          <h4>Works locally</h4>
+          <p>Easily integrates into developers' toolsets (Git, text editors, etc.)&nbsp;
+          </p>
+          <div>Works with plain HTML and LESS files.</div>
+          <p></p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="bg-primary p-y-3 section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead m-y-3 text-xs-center">Something like "We develop Pingendo for the Bootstrap community since 2014. You can trust us."</p>
+        </div>
+      </div>
+      <div class="row text-xs-center">
+        <div class="col-xs-4">
+          <a><i class="fa fa-5x fa-fw fa-twitter"></i></a>
+        </div>
+        <div class="col-xs-4">
+          <a><i class="fa fa-5x fa-fw fa-facebook"></i></a>
+        </div>
+        <div class="col-xs-4">
+          <a><i class="fa fa-5x fa-fw fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+                                                                                                                              var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                                                                                        			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                                                                                                     	console.log("IS CHROM ", isChrome); 
+                                                                                                                        			if (isChrome) {
+                                                                                                                        
+                                                                                                                                $("#playgroundBtn").html("Try now in Chrome");
+                                                                                                                              }
+                                                                                                                              else if (isSafari)
+                                                                                                                                $("#playgroundBtn").html("Try now in Safari");
+                                                                                                                        
+                                                                                                                        
+                                                                                                                            });
+  </script>
+  <script>
+    var _gaq = _gaq || [];
+                                                                                                                        _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                                                                                                        _gaq.push(['_trackPageview']);
+                                                                                                                      
+                                                                                                                        (function() {
+                                                                                                                          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                                                                                                          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                                                                                                          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                                                                                                        })();
+  </script>
+
+
+</body>
+
+</html>
