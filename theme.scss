@@ -151,9 +151,15 @@ h1,h2,h3 {
   background-repeat: no-repeat;
   background-position: bottom right;  
   
+  
+  @include media-breakpoint-down('lg') {
+		background-position: bottom -100px;
+  }
+  
   @include media-breakpoint-down('md') {
 		background-image:none;
   }
+  
 }
 
 
