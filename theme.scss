@@ -132,22 +132,25 @@ h1,h2,h3 {
 
 
 .github-cover {
+
   height: 700px;
 	background-image: url("browser.png");
   background-size: 900px 650px;
   background-repeat: no-repeat;
-
   background-origin: border-box;
   
+  
+   @include media-breakpoint-up('md') {
+	  background-position: right bottom;  
+  }
+ 
+  
   @include media-breakpoint-down('lg') {
-  background-position: 600px bottom;  
+  	background-position: 600px bottom;  
   }
   
 
   
-  @include media-breakpoint-up('md') {
-	  background-position: right bottom;  
-  }
   
   @include media-breakpoint-down('md') {
 		background-image:none;
