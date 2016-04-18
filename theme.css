@@ -4933,6 +4933,3 @@ h1, h2, h3 {
   @media (max-width: 991px) {
     .github-cover {
       background-image: none; } }
-
-.card {
-  border-radius: 20px; }
