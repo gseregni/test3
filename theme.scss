@@ -150,6 +150,10 @@ h1,h2,h3 {
   background-size: 900px 650px;
   background-repeat: no-repeat;
   background-position: bottom right;  
+  
+  @include media-breakpoint-down(md) {
+		background-image:none;
+  }
 }
 
 
