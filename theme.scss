@@ -78,16 +78,16 @@ $font-size-xs : .75rem !default;
 $headings-font-family : inherit !default;
 
 $grid-breakpoints: (
-  // Extra small screen / phone
-  xs: 0,
-  // Small screen / phone
-  sm: 544px,
-  // Medium screen / tablet
-  md: 768px,
-  // Large screen / desktop
-  lg: 992px,
-  // Extra large screen / wide desktop
-  xl: 1380px
+// Extra small screen / phone
+xs: 0,
+// Small screen / phone
+sm: 544px,
+// Medium screen / tablet
+md: 768px,
+// Large screen / desktop
+lg: 992px,
+// Extra large screen / wide desktop
+xl: 1380px
 ) !default;
 
 
@@ -95,9 +95,9 @@ $grid-breakpoints: (
 @import 'pingendo-bootstrap';
 
 h1,h2,h3 {
- 
-   
-    font-weight : 200;
+
+
+  font-weight : 200;
 }
 
 
@@ -147,32 +147,24 @@ h1,h2,h3 {
 .github-cover {
 
   height: 700px;
-	background-image: url("browser.png");
+  background-image: url("browser.png");
   background-size: 900px 650px;
   background-repeat: no-repeat;
   background-origin: border-box;
-  
-  
-   @include media-breakpoint-up('xl') {
-	  background-position: right bottom;  
+
+
+  @include media-breakpoint-up('xl') {
+    background-position: right bottom;  
   }
- 
-  
+
+
   @include media-breakpoint-down('lg') {
-  	background-position: 600px bottom;  
+    background-position: 600px bottom;  
   }
-  
 
-  
-  
   @include media-breakpoint-down('md') {
-		background-image:none;
+    background-image:none;
   }
-  
-}
-
-
-.container {
 
 }
-  
+
