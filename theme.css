@@ -4925,7 +4925,7 @@ h1, h2, h3 {
   background-repeat: no-repeat;
   background-origin: border-box;
   background-position: 600px bottom; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .github-cover {
       background-position: right bottom; } }
   @media (max-width: 991px) {
