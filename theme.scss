@@ -145,10 +145,12 @@ h1,h2,h3 {
 }
 
 .github-cover {
+  height: 700px;
 	background-image: url("browser.png");
-  background-size: 50%;
+  background-size: 900px 650px;
+
   background-repeat: no-repeat;
-  background-position: center right;  
+  background-position: bottom right;  
 }
 
 
