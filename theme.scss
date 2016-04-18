@@ -153,8 +153,8 @@ h1,h2,h3 {
   background-origin: border-box;
   
   
-  @include media-breakpoint-up('lg') {
-
+  @include media-breakpoint-down('lg') {
+	  background-position: 600px bottom;  
   }
   
   @include media-breakpoint-down('md') {
