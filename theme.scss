@@ -77,6 +77,19 @@ $font-size-xs : .75rem !default;
 
 $headings-font-family : inherit !default;
 
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 544px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1380px
+) !default;
+
 
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
@@ -130,19 +143,34 @@ h1,h2,h3 {
   border-top : 1px solid white !important;
 }
 
-.section-fill-height {
-  min-height : 640px;
+
+.github-cover {
+
+  height: 700px;
+	background-image: url("browser.png");
+  background-size: 900px 650px;
+  background-repeat: no-repeat;
+  background-origin: border-box;
   
-	.background-video-holder:after {
-    position:absolute;
-    top:0px;
-    width:100%;
-    height:100%;
-    background-color:red;
+  
+   @include media-breakpoint-up('xl') {
+	  background-position: right bottom;  
+  }
+ 
+  
+  @include media-breakpoint-down('lg') {
+  	background-position: 600px bottom;  
   }
   
 
+  
+  
+  @include media-breakpoint-down('md') {
+		background-image:none;
+  }
+  
 }
+
 
 .container {
 
