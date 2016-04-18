@@ -140,7 +140,7 @@ h1,h2,h3 {
   background-origin: border-box;
   
   
-   @include media-breakpoint-up('lg') {
+   @include media-breakpoint-up('xl') {
 	  background-position: right bottom;  
   }
  
