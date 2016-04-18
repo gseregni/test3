@@ -145,7 +145,7 @@ h1,h2,h3 {
   }
  
   
-  @include media-breakpoint-down('lg') {
+  @include media-breakpoint-down('xl') {
   	background-position: 600px bottom;  
   }
   
