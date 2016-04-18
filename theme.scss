@@ -149,12 +149,12 @@ h1,h2,h3 {
 	background-image: url("browser.png");
   background-size: 900px 650px;
   background-repeat: no-repeat;
-  background-position: 600px bottom;  
+  background-position: right bottom;  
   background-origin: border-box;
   
   
-  @include media-breakpoint-down('lg') {
-		background-position: bottom -100px;
+  @include media-breakpoint-up('lg') {
+
   }
   
   @include media-breakpoint-down('md') {
