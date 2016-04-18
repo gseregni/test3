@@ -4932,7 +4932,8 @@ h1, h2, h3 {
   background-image: url("browser.png");
   background-size: 900px 650px;
   background-repeat: no-repeat;
-  background-position: bottom right; }
+  background-position: 600px bottom;
+  background-origin: border-box; }
   @media (max-width: 1199px) {
     .github-cover {
       background-position: bottom -100px; } }
