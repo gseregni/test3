@@ -4933,3 +4933,6 @@ h1, h2, h3 {
   background-size: 900px 650px;
   background-repeat: no-repeat;
   background-position: bottom right; }
+  @media (max-width: 991px) {
+    .github-cover {
+      background-image: none; } }
