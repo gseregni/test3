@@ -4923,11 +4923,10 @@ h1, h2, h3 {
   background-image: url("browser.png");
   background-size: 900px 650px;
   background-repeat: no-repeat;
-  background-origin: border-box;
-  background-position: 600px bottom; }
+  background-origin: border-box; }
   @media (max-width: 1199px) {
     .github-cover {
-      background-position: right bottom; } }
+      background-position: 600px bottom; } }
   @media (min-width: 768px) {
     .github-cover {
       background-position: right bottom; } }
