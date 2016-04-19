@@ -140,7 +140,7 @@
           var $clone = $("#tweet").clone();
           $("#tweet").after($clone);
 
-          twttr.widgets.createTweet(this,$clone[0],{conversation:true});
+          twttr.widgets.createTweet(this,$clone[0],{conversation:false});
 
         });
 
@@ -168,6 +168,8 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   </script>
+
+
 
 
 
