@@ -143,15 +143,12 @@
   <script>
     $(document).ready(function() {
         twttr.widgets.load();
-				
+        var tweets = [718111345124749313];
         $(tweets).each(function() {
-          
+          var $clone = $("#tweet").clone();
+          twttr.widgets.createTweet('20',document.getElementById('tweet'),{});
         });
-        
-        twttr.widgets.createTweet('20',
-          document.getElementById('tweet'),
-          {}
-        );
+
         var isChrome = /Chrome/.test(navigator.userAgent) ;
         var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
         console.log("IS CHROM ", isChrome); 
