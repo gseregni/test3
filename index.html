@@ -143,11 +143,11 @@
   <script>
     $(document).ready(function() {
         twttr.widgets.load();
-        var tweets = [718111345124749313];
+        var tweets = ["718111345124749313"];
         $(tweets).each(function() {
           var $clone = $("#tweet").clone();
           $("#tweet").after($clone);
-          twttr.widgets.createTweet("20",$clone[0],{});
+          twttr.widgets.createTweet(this,$clone[0],{});
 
         });
 
@@ -175,6 +175,8 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   </script>
+
+
 
 
 
