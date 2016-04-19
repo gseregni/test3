@@ -147,7 +147,7 @@
         $(tweets).each(function() {
           var $clone = $("#tweet").clone();
           $("#tweet").after($clone);
-          twttr.widgets.createTweet(this,$clone[0],{});
+          twttr.widgets.createTweet("20",$clone[0],{});
 
         });
 
