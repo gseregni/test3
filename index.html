@@ -143,7 +143,11 @@
   <script>
     $(document).ready(function() {
         twttr.widgets.load();
-
+				
+        $(tweets).each(function() {
+          
+        });
+        
         twttr.widgets.createTweet('20',
           document.getElementById('tweet'),
           {}
