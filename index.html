@@ -36,11 +36,11 @@
                             <br>
                         </h3>
           <div class="row">
-            <div class="col-md-6" style="transform: perspective( 600px ) rotateY( 5deg );">
+            <div class="col-md-6 left" style="transform: perspective( 1000px ) rotateY( 5deg );">
               <div class=" card m-y-1">
                 <div class="card-block text-center text-xs-center">
                   <img class="center-block img-fluid m-y-3" src="logo-desktop.png">
-                  <h2 class="card-title text-info">Pingendo Desktop</h2>
+                  <h2 class="card-title text-primary">Pingendo Desktop</h2>
                   <p class="lead m-y-1 text-info text-xs-center">For developers who work locally
                     <br>
                     <br>
@@ -51,12 +51,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="bg-primary card m-y-1" style="transform: perspective( 600px ) rotateY( -5deg );">
+            <div class="col-md-6 right">
+              <div class=" card m-y-1" style="transform: perspective( 1000px ) rotateY( -5deg );">
                 <div class="card-block text-center text-xs-center">
                   <img class="center-block img-circle img-fluid m-y-2 p-a-1" src="logo-forgh.png" style="background-color:#009ed3">
-                  <h2 class="card-title">Pingendo for Github</h2>
-                  <p class="lead m-y-1 text-inverse text-xs-center">For developers and their clients.
+                  <h2 class="card-title text-primary">Pingendo for Github</h2>
+                  <p class="lead m-y-1 text-info text-xs-center">For developers and their clients.
                     <br>A tool&nbsp;to keep everyone in the loop</p>
                 </div>
                 <div class="card-block text-center">
@@ -69,7 +69,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-info p-y-3 section">
+  <div class="bg-info p-y-3 section b-t">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -95,30 +95,34 @@
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-                                                                                                                                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
-                                                                                                                                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-                                                                                                                                                             	console.log("IS CHROM ", isChrome); 
-                                                                                                                                                			if (isChrome) {
-                                                                                                                                                
-                                                                                                                                                        $("#playgroundBtn").html("Try now in Chrome");
-                                                                                                                                                      }
-                                                                                                                                                      else if (isSafari)
-                                                                                                                                                        $("#playgroundBtn").html("Try now in Safari");
-                                                                                                                                                
-                                                                                                                                                
-                                                                                                                                                    });
+                                                                                                                                                              var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                                                                                                                        			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                                                                                                                                     	console.log("IS CHROM ", isChrome); 
+                                                                                                                                                        			if (isChrome) {
+                                                                                                                                                        
+                                                                                                                                                                $("#playgroundBtn").html("Try now in Chrome");
+                                                                                                                                                              }
+                                                                                                                                                              else if (isSafari)
+                                                                                                                                                                $("#playgroundBtn").html("Try now in Safari");
+                                                                                                                                                        
+                                                                                                                                                        
+                                                                                                                                                            });
   </script>
   <script>
     var _gaq = _gaq || [];
-                                                                                                                                                _gaq.push(['_setAccount', 'UA-29443235-1']);
-                                                                                                                                                _gaq.push(['_trackPageview']);
-                                                                                                                                              
-                                                                                                                                                (function() {
-                                                                                                                                                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                                                                                                                                                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                                                                                                                                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                                                                                                                                                })();
+                                                                                                                                                        _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                                                                                                                                        _gaq.push(['_trackPageview']);
+                                                                                                                                                      
+                                                                                                                                                        (function() {
+                                                                                                                                                          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                                                                                                                                          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                                                                                                                                          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                                                                                                                                        })();
   </script>
+
+
+
+
 
 
 </body>
