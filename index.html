@@ -123,7 +123,26 @@
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script>
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+     
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+     
+      return t;
+    }(document, "script", "twitter-wjs"));
+  </script>
+  <script>
     $(document).ready(function() {
+      twttr.widgets.load();
                                                                                                                                                                                                       var isChrome = /Chrome/.test(navigator.userAgent) ;
                                                                                                                                                                                                 			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
                                                                                                                                                                                                              	console.log("IS CHROM ", isChrome); 
@@ -151,24 +170,6 @@
 
 
 
-  <script>
-    window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-     
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-     
-      return t;
-    }(document, "script", "twitter-wjs"));
-  </script>
 </body>
 
 </html>
