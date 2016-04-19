@@ -140,7 +140,7 @@
           var $clone = $("#tweet").clone();
           $("#tweet").before($clone);
 
-          twttr.widgets.createTweet(this,$clone[0],{conversation:"none"});
+          twttr.widgets.createTweet(this,$clone[0],{conversation:"none", cards : "hidden"});
 
         });
 
