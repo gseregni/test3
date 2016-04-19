@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="theme.css" rel="stylesheet" type="text/css">
+
   <style>
 
   </style>
@@ -25,6 +26,21 @@
       </li>
     </ul>
   </nav>
+  <div class="bg-primary section section-fill-height text-xs-center github-cover">
+    <div class="container-fluid">
+      <div class="row p-t-3">
+        <div class="p-l-3  col-lg-5 p-y-3 text-xs-center text-lg-left col-lg-offset-1">
+          <h1 class="display-3 pi-draggable pi-item">
+                            <br>Pingendo&nbsp;
+<br></h1>
+          <h3 class="m-y-2">Desktop Bootstrap builder.<br>Now for Bootstrap 4
+                        </h3>
+          <a href="http://v4.pingendo.com/playground.html" class="btn btn-info btn-lg" id="playgroundBtn" target="_blank">Login with Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="bg-info p-y-3 section section-fill-height text-xs-center">
     <div class="container">
       <div class="m-y-3 p-y-3 row">
@@ -90,36 +106,54 @@
     </div>
   </div>
   <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+  <script type="text/javascript" src="http://www.google-analytics.com/ga.js" async=""></script>
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript">
+    $(document).ready(function() {
+                                                                                                                                                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                                                                                                                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                                                                                                                                             	console.log("IS CHROM ", isChrome); 
+                                                                                                                                                                			if (isChrome) {
+                                                                                                                                                                
+                                                                                                                                                                        $("#playgroundBtn").html("Try now in Chrome");
+                                                                                                                                                                      }
+                                                                                                                                                                      else if (isSafari)
+                                                                                                                                                                        $("#playgroundBtn").html("Try now in Safari");
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                    });
+  </script>
   <script>
     $(document).ready(function() {
-                                                                                                                                                              var isChrome = /Chrome/.test(navigator.userAgent) ;
-                                                                                                                                                        			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-                                                                                                                                                                     	console.log("IS CHROM ", isChrome); 
-                                                                                                                                                        			if (isChrome) {
-                                                                                                                                                        
-                                                                                                                                                                $("#playgroundBtn").html("Try now in Chrome");
-                                                                                                                                                              }
-                                                                                                                                                              else if (isSafari)
-                                                                                                                                                                $("#playgroundBtn").html("Try now in Safari");
-                                                                                                                                                        
-                                                                                                                                                        
-                                                                                                                                                            });
+                                                                                                                                                                      var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                                                                                                                                			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                                                                                                                                             	console.log("IS CHROM ", isChrome); 
+                                                                                                                                                                			if (isChrome) {
+                                                                                                                                                                
+                                                                                                                                                                        $("#playgroundBtn").html("Try now in Chrome");
+                                                                                                                                                                      }
+                                                                                                                                                                      else if (isSafari)
+                                                                                                                                                                        $("#playgroundBtn").html("Try now in Safari");
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                    });
   </script>
+
+
+
+
+
   <script>
     var _gaq = _gaq || [];
-                                                                                                                                                        _gaq.push(['_setAccount', 'UA-29443235-1']);
-                                                                                                                                                        _gaq.push(['_trackPageview']);
-                                                                                                                                                      
-                                                                                                                                                        (function() {
-                                                                                                                                                          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                                                                                                                                                          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                                                                                                                                                          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                                                                                                                                                        })();
+                                                                                                                                                                _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                                                                                                                                                _gaq.push(['_trackPageview']);
+                                                                                                                                                              
+                                                                                                                                                                (function() {
+                                                                                                                                                                  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                                                                                                                                                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                                                                                                                                                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                                                                                                                                                })();
   </script>
-
-
 </body>
 
 </html>
