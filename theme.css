@@ -3457,7 +3457,7 @@ th {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3796,11 +3796,11 @@ html {
   width: device-width; }
 
 html {
-  font-size: 16px;
+  font-size: 13px;
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato;
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
@@ -4122,7 +4122,7 @@ output {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4886,7 +4886,7 @@ a.text-danger:hover {
   }
 }*/
 h1, h2, h3 {
-  font-weight: 200; }
+  font-weight: 100; }
 
 .container-fluid {
   width: 100%; }
@@ -4916,7 +4916,10 @@ h1, h2, h3 {
   opacity: 1; }
 
 .b-t {
-  border-top: 1px solid white !important; }
+  border-top: 1px solid #009ed3 !important; }
+
+.b-b {
+  border-bottom: 1px solid #009ed3 !important; }
 
 .github-cover {
   height: 700px;

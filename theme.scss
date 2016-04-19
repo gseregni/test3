@@ -65,10 +65,10 @@ $link-hover-decoration : underline !default;
 $font-family-sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif : Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace : Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base : $font-family-sans-serif !default;
+$font-family-base : Lato;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root : 16px !default;
+$font-size-root : 13px !default;
 
 $font-size-base : 1rem !default;
 $font-size-lg : 1.25rem !default;
@@ -77,7 +77,7 @@ $font-size-xs : .75rem !default;
 
 $headings-font-family : inherit !default;
 
-$grid-breakpoints: (
+$grid-breakpoints : (
 // Extra small screen / phone
 xs: 0,
 // Small screen / phone
@@ -95,9 +95,7 @@ xl: 1380px
 @import 'pingendo-bootstrap';
 
 h1,h2,h3 {
-
-
-  font-weight : 200;
+  font-weight : 100;
 }
 
 
@@ -140,17 +138,21 @@ h1,h2,h3 {
 
 
 .b-t {
-  border-top : 1px solid white !important;
+  border-top : 1px solid $brand-primary !important;
+}
+
+.b-b {
+  border-bottom : 1px solid $brand-primary !important;
 }
 
 
 .github-cover {
 
-  height: 700px;
-  background-image: url("browser.png");
-  background-size: 900px 650px;
-  background-repeat: no-repeat;
-  background-origin: border-box;
+  height : 700px;
+  background-image : url("browser.png");
+  background-size : 900px 650px;
+  background-repeat : no-repeat;
+  background-origin : border-box;
 
 
   @include media-breakpoint-up('xl') {
