@@ -26,12 +26,12 @@
     </div>
   </nav>
   <div class="section">
-    <div class="container m-y-3 p-y-3">
+    <div class="container-fluid m-y-3 p-y-3">
       <div class="row">
-        <div class="col-lg-3 ">
-          <ul class="nav nav-pills  nav-stacked" draggable="true">
+        <div class="col-lg-2 ">
+          <ul class="nav nav-pills  nav-stacked">
             <li class="nav-item lead">
-              <a href="#" class="nav-link">Quickstart</a>
+              <a href="#" class="nav-link">Introduction</a>
             </li>
             <li class="nav-item m-l-2">
               <a href="#" class="nav-link">Desktop</a>
@@ -40,7 +40,7 @@
               <a href="#" class="nav-link">for Github</a>
             </li>
             <li class="nav-item lead">
-              <a href="#" class="nav-link">Editor</a>
+              <a href="#" class="nav-link">Builder</a>
             </li>
             <li class="nav-item m-l-2">
               <a href="#" class="nav-link">HTML</a>
@@ -52,37 +52,250 @@
               <a href="#" class="nav-link">Github intergration</a>
             </li>
             <li class="nav-item m-l-2">
-              <a href="#" class="nav-link">Repository<br></a>
+              <a href="#" class="nav-link">Private repos ?</a>
             </li>
             <li class="nav-item m-l-2">
-              <a href="#" class="nav-link">Share</a>
+              <a href="#" class="nav-link">Preview ?</a>
             </li>
             <li class="nav-item m-l-2">
               <a href="#" class="nav-link">Pull requests</a>
+            </li>
+            <li class="nav-item m-l-2">
+              <a href="#" class="nav-link">Github Pages<br></a>
             </li>
             <li class="nav-item m-l-2">
               <a href="#" class="nav-link">Permissions</a>
             </li>
           </ul>
         </div>
-        <div class="col-lg-8">
-          <h1 class="display-4 m-b-2">Quickstart<br></h1>
-          <h2 class=""><b>Pingendo Desktop</b></h2>
-          <p class="">Download a copy from www.pingendo.com/desktop.html
-            <br>Pingendo runs on Windows (9+), OSX (10.9+) and Linux.
+        <div class="col-lg-9  ">
+          <h2 class=""></h2>
+          <h1 class="">
+                            <b>Introduction</b>
+                        </h1>
+          <p class="lead text-info">Pingendo is a Bootstrap builder available in two version, one to work locally on filesystem and the other one that works online integrated with Github.&nbsp;
             <br>
-            <br>Once installed an launch
             <br>
-          </p><img class="center-block img-fluid" src="desktop-1.png" draggable="true">
-          <h4 class="">for Github</h4>
-          <h1 class="display-4 m-t-3">Editor</h1>
-          <h4 class="">Desktop</h4>
+            <br>
+          </p>
+          <b></b>
+          <h3 class="">
+                            <b>Pingendo Desktop</b>
+                        </h3>
+          <p class="lead">Pingendo Desktop it's an app that works on Windows (9+), OSX (10.9+) and Linux. &nbsp;
+            <br>You can get a copy from www.pingendo.com/desktop.html &nbsp;
+            <br>
+            <br>Once installed and launched you can create a page from a template.&nbsp;
+            <br>The result is saved as plain HTML, Sass and CSS files that you can modify also with external editors. No need to export or import nothing.
+            <br>To learn more about what you can do in Pingendo jump to the
+            <a href="#">Editor</a>section
+            <br>
+            <br>
+            <br>
+          </p>
+          <h3 class="">
+                            <b>Pingendo for Github</b>
+                        </h3>
+          <p class="lead">Pingendo for Github it's a web app that works in Chrome or Safari. Support for other browsers will be added.
+            <br>Integrates with Github API to load and save HTML pages and theirs assets in repositories.
+            <br>First time you'll try to log in Pingendo you'll be prompted to grant it access to Github API. This is required in order to let PIngendo read and save files.
+            <br>
+            <b>We use standard OAuth mechanism provided by Github and we do not store
+                                in any way your password.</b>
+            <br>For additional info check out the Github website
+            <a href="https://help.github.com/articles/connecting-with-third-party-applications/">https://help.github.com/articles/connecting-with-third-party-applications/</a>
+            <br>
+            <br>Unfortunately Github does not yet features granular control access through API. Pingendo does not store any of your password or giulio scrive. Anyway, if you feel safer, please create a user with only the repositories you would like to connect
+            to Pingendo.</p>
+          <hr class="m-y-3">
+          <h1 class="">
+                            <b>Builder</b>
+                        </h1>
+          <p class="lead">The builder interface it's the same for both PIngendo Desktop and Pingendo for Github and consists of 5 main areas&nbsp;</p>
+          <div class="row" draggable="true">
+            <div class="col-lg-3">
+              <p class="lead">1 the toolbar&nbsp;
+                <br>
+                <br>2 sections and components panel permit you to browse and drag premade sections and Bootstrap 4 components
+                <br>
+                <br>3 the canvas where you can drop elements&nbsp;
+                <br>
+                <br>4 the property panel that permit to change setting for the selection and the page
+                <br>
+                <br>5 the source panel let you work on&nbsp;
+                <br>
+                <br>
+                <br>
+                <br>
+              </p>
+            </div>
+            <div class="col-lg-8   ">
+              <img class="center-block img-fluid" src="Schermata 2016-04-20 alle 11.25.11.png">
+            </div>
+          </div>
+          <h3 class="">
+                            <br>
+                            <b>HTML</b>
+                        </h3>
+          <p class="lead" contenteditable="true">Pingendo let you build good-looking and perfectly coded HTML pages, deadly fast.&nbsp;
+            <br>
+            <br>To start mocking up a new page you can drag needed elements from sections and components panel.
+            <br>Sections are pre-made sections commonly used in site development.&nbsp; Components are all the ones that Bootstrap 4 features&nbsp;
+            <br>
+            <br>
+          </p>
+          <div class="row">
+            <div class="col-lg-7">
+              <p class="lead">You can click on canvas to select single elements and play with its properties using the selection tab of the property panel. &nbsp; The properties are the ones that Bootstrap offers. (So don't blame us if something seems counterintuitive)
+                &nbsp;
+                <br>
+                <br>When an element is selected you can select its parents using the breadcrumb.
+                <br>This is particularly useful when you can't pick an element directly from canvas.
+                <br>You can also use the ESC key.
+                <br>
+                <br>
+              </p>
+            </div>
+            <div class="col-lg-4  col-lg-offset-1">
+              <img class="center-block img-fluid img-thumbnail" src="Schermata 2016-04-20 alle 15.36.27.png?2">
+            </div>
+          </div>
+          <div class="m-t-3 row">
+            <div class="col-lg-7">
+              <p class="lead">If you are working on something more than a quick mockup, you can get your hand dirty using the HTML editor in the bottom HTML tab.
+                <br>
+                <br>The editor is live, so the canvas will update almost realtime to reflect changes and vice versa.&nbsp;
+                <br>Since what you are editing it's a live HTML DOM, you should &nbsp;use Pingendo only on proper and valid HTML &nbsp;documents. Preprocessors tags (like PHP) or templates engines are not supported and can't be saved correctly.</p>
+            </div>
+            <div class="col-lg-4  col-lg-offset-1">
+              <img class="center-block img-fluid img-thumbnail" src="Schermata 2016-04-20 alle 16.17.34.png">
+            </div>
+          </div>
+          <h3 class="">
+                            <br>
+                            <b>SASS</b>
+                        </h3>
+          <div class="row" draggable="true">
+            <div class="col-lg-7">
+              <p class="lead">SASS it's the CSS preprocessor used by Bootstrap 4. &nbsp;
+                <br>Differently by most Boostrap-based editors Pingendo &nbsp;customize directly the SASS source and not simply the CSS.
+                <br>This to generate clean sources easily readable by developers .
+                <br>
+                <br>You can play with most common SASS variables, &nbsp;such as color scheme and fonts, from the &nbsp;the page inspector. &nbsp;If you need to customize more &nbsp;you can edit the SASS source from the SASS tab bottom.
+                <br>
+                <br>
+                <br>When you create a new page the &nbsp;default Boostrap 4 theme will be attached by default.
+                <br>As soon as you modify something you will be prompted to &nbsp;give it a name and save it.
+                <br>
+                <br>To check which is SASS theme attached to a page use the FILE propertiy of the page tab.
+                <br>
+                <br>To attach an&nbsp;existing theme to a page click on the "FOLDER" icon of the file row and select the desired theme.&nbsp;
+                <br>
+                <br>
+              </p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <img class="center-block img-fluid img-thumbnail" src="Schermata 2016-04-20 alle 16.46.09.png">
+            </div>
+          </div>
+          <hr class="m-y-3">
+          <h1 class="">
+                            <b>Github integration</b>
+                        </h1>
+          <p class="lead">
+            <i>This part applies only to Pingendo for Github users. Pingendo Desktop
+                                users should &nbsp;use instead Github Desktop client,</i>
+            <br>
+            <br>Pingendo for Github features Github integration to let you work online on pages stored in Github repositories.
+            <br>Scope of the integration is to make simple for teams of developers and non developers to efficently collaborate building static web sites.
+            <br>To do this Pingendo for Github offer an alternative and simplified version of Github web interface.
+            <br>
+            <br>Pingendo for Gihthub use the same url scheme of Github. So if you need to access for example the repository
+            <i>test</i>of
+            <i>exampleuser &nbsp;</i>you can point your browser to github.pingendo.com/exampleuser/test and you'll get the same as github.com/exampleuser/test.
+            <br>
+            <br>
+          </p>
+          <div class="row" draggable="true">
+            <div class="col-lg-4">
+              <p class="lead">The interface for working with the files in a repo is divided in 3 main areas
+                <br>
+                <br>1 Current repository browser permit to switch between master version of your project and proposed revisions (Github pull requests) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp;
+                <br>2 Browser for files contained in the current version&nbsp;
+                <br>
+                <br>3 Current file preview&nbsp;</p>
+            </div>
+            <div class="col-lg-8">
+              <img class="center-block img-fluid" src="Schermata 2016-04-21 alle 10.59.54.png">
+            </div>
+          </div>
+          <h3 class="">
+                            <b>Pull requests</b>
+                            <br>
+                        </h3>
+          <p class="lead">Pull requests let you tell others about changes you want to push to the master version.&nbsp;
+            <br>Once a pull request is sent, interested parties can review the set of&nbsp;changes, discuss potential modifications, and even push follow-up commits if necessary.
+            <br>
+            <br>
+          </p>
+          <div class="row" draggable="true">
+            <div class="col-lg-6">
+              <p class="lead">To create a new pull request click the "New pull request" button and give it a name that well describe what your changes are about.
+                <br>Once created you'll get a fresh copy of the master version to work with safely.
+                <br>
+                <br>As soon as you modify or delete existing files or upload a new one, a status badge will appear beside the file name. This to keep track easily of the changes contained in a pull request.
+                <br>
+                <br>If you want &nbsp;just discard a pull request use the close command.&nbsp;
+                <br>Instead if a pull request is ok and you&nbsp;
+                <span style="font-size: 1.25rem; line-height: 1.5;">are one of the collaborators of the&nbsp;</span>
+                <br>
+                <span style="font-size: 1.25rem; line-height: 1.5;">project you can merge it to the master&nbsp;version.</span>
+                <br>
+                <br>Warning, due to the way of working of Github Pull Request may be not mergeable sometimes.
+                <br>This happens when a pull request modify a part of a file that has been modified also in the master version.
+                <br>
+                <br>
+                <br>&nbsp;</p>
+            </div>
+            <div class="col-lg-6">
+              <img class="center-block img-fluid" src="Schermata 2016-04-21 alle 11.49.53.png">
+            </div>
+          </div>
+          <h3 class="">
+                            <b>Github Pages</b>
+                            <br>
+                        </h3>
+          <div class="row" draggable="true">
+            <div class="col-lg-6">
+              <p class="lead">Github Pages it's a free hosting service kindly offered by Github.&nbsp;
+                <br>Master version of every repository can be publish to Github pages and so available on the internet.
+                <br>
+                <br>To publish the master version use the publish button. Once publish you can visit the web site pointing your browser to &lt;username&gt;.github.io/&lt;project&gt;.
+                <br>
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img class="center-block img-fluid" src="Schermata 2016-04-21 alle 12.26.41.png">
+            </div>
+          </div>
+          <h3 class="">
+                            <br>
+                            <b>Permissions</b>
+                            <br>
+                        </h3>
+          <p class="lead">Repository permissions are configured on Github.&nbsp;
+            <br>So, say we are working on a project named test. if you add userA as collaborator to test, userA will be able to merge and close pull&nbsp;request as well as editing the master version.
+            <br>If instead userA is not part of the collaborator of test he will still be able to submit new pull-requests but he won't be able to merge them or edit anything else on the repo.
+            <br>
+            <br>
+          </p>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
   </div>
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 
 
 </body>
