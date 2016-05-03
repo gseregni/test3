@@ -14,10 +14,10 @@
       <a class="navbar-brand" href="index.html">Pingendo</a>
       <ul class="nav navbar-nav pull-right">
         <li class="nav-item">
-          <a class="nav-link" href="index-desktop.html">Desktop</a>
+          <a class="nav-link" href="desktop.html">Desktop</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index-github.html">for Github</a>
+          <a class="nav-link" href="github.html">for Github</a>
         </li>
         <li class="nav-item">
           <a class="active nav-link" href="docs.html">Documentation</a>
@@ -54,7 +54,6 @@
             <li class="nav-item m-l-2">
               <a href="#" class="nav-link">Sources</a>
             </li>
-
             <li class="nav-item m-l-2">
               <a href="#" class="nav-link">Shortcuts</a>
             </li>
@@ -116,7 +115,7 @@
             <br>Once installed and launched you can create a page from a template.&nbsp;
             <br>The result is saved as plain HTML, Sass and CSS files that you can modify also with external editors. No need to export source.
             <br>To learn more about what you can do in Pingendo jump to the
-            <a href="#">Editor</a>&nbsp;section .
+            <a href="#builder">Builder</a>&nbsp;section .
             <br>
             <br>
           </p>
@@ -135,7 +134,7 @@
           </p>
           <br>
           <hr class="m-y-3">
-          <h1 class="">
+          <h1 class="" id="builder">
                             <b>Builder</b>
                         </h1>
           <p class="lead">The builder interface is the same for all three versions and consists of 5 main areas&nbsp;</p>
@@ -192,7 +191,6 @@
                 <br>
               </p>
               <p class="lead"></p>
-
             </div>
             <div class="col-lg-4  col-lg-offset-1">
               <img class="center-block img-fluid img-thumbnail" src="Schermata 2016-04-20 alle 15.36.27.png?2">
@@ -200,13 +198,11 @@
           </div>
           <div class="row">
             <div class="col-lg-7">
-              <p class="lead">To set up document title and SEO related properties use the "PAGE" panel instead.</p>
+              <p class="lead">To set up document title and SEO related properties use the "PAGE" panel instead.
+              </p>
               <p class="lead"></p>
-
             </div>
-
           </div>
-
           <h3 class="">
                             <br>
                             <b>Saas</b>
@@ -225,9 +221,6 @@
                 <br>
                 <br>To check which is the SASS theme attached to a page, look at the FILE property of the page tab.
                 <br>
-                <br>To attach an&nbsp;existing theme to a page click on the "FOLDER" icon of the file row and select the desired theme. &nbsp;
-                <b class="text-danger">Coming</b>
-                <br>
                 <br>
               </p>
             </div>
@@ -236,18 +229,17 @@
             </div>
           </div>
           <h3 class="">
-                            <br><b>Sources</b></h3>
+                            <br>
+                            <b>Sources</b>
+                        </h3>
           <div class="row" draggable="true">
             <div class="col-lg-7">
-              <p class="lead">If you are working on something more than a quick mockup, you can get your hands dirty by using the editor in the bottom tab.
+              <p class="lead">If you are working on something more than a quick mockup, you can get your hands dirty by using the HTML and Sass editor in the bottom tab.
                 <br>
                 <br>The editor is live, so the canvas will update realtime to reflect changes and vice versa.&nbsp;
                 <br>
                 <br>When you edit HTML you should &nbsp;use Pingendo only on proper and valid &nbsp;HTML documents. &nbsp;Since what you are editing it's a live &nbsp;DOM representation,&nbsp;Preprocessors (like PHP), templates engines and running JS are
                 not supported and&nbsp;can't be saved correctly.
-                <br>
-                <br>When you edit Sass&nbsp;
-                <br>
                 <br>
               </p>
             </div>
@@ -255,7 +247,6 @@
               <img class="center-block img-fluid img-thumbnail" src="Schermata 2016-04-20 alle 16.17.34.png">
             </div>
           </div>
-          <h3 class=""><br><b>Shortcuts</b></h3>
           <hr class="m-y-3">
           <h1 class="">
                             <b>Github integration</b>
@@ -281,12 +272,24 @@
           <h3 class="">
                             <b>Account page</b>
                         </h3>
-          <p class="lead text-danger">Lorem</p>
+          <div class="row" draggable="true">
+            <div class="col-lg-5">
+              <p class="lead">From the account page you can browser your existing Github repositories.
+                <br>Repository are divided in two group, the ones you own the ones you have contributed to.
+                <br>
+                <br>You can create a new repository using the "Create new repo" command.
+                <br>
+                <br>
+                <br>
+              </p>
+            </div>
+            <div class="col-md-7        "><img class="center-block img-fluid" src="Schermata%202016-05-03%20alle%2015.40.37.png"></div>
+          </div>
           <h3 class="">
                             <b>Repository page</b>
                         </h3>
           <div class="row" draggable="true">
-            <div class="col-lg-4">
+            <div class="col-lg-5">
               <p class="lead">The repository page is divided into three columns:
                 <br>
                 <br>1 - Repository browser
@@ -300,7 +303,7 @@
                 <br>
               </p>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-7 ">
               <img class="center-block img-fluid" src="Schermata 2016-04-21 alle 10.59.54.png">
             </div>
           </div>
@@ -310,16 +313,13 @@
                             <br>
                         </h3>
           <p class="lead">Repository permissions are configured on Github.&nbsp;
-            <br>
-            <br>- Collaborators
-            <br>They can edit the master version as well merge and close pull&nbsp;request.
-            <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <br>- Any Github user
-            <br>They can submit new pull-requests only. No permissions to merge or edit anything in the repository.
+            <br>Collaborators of the repository can edit the master version as well merge and close pull&nbsp;request.
+            <br>Other Github users, that are not collaborators, can only submit new pull-requests.&nbsp;
             <br>
             <br>
           </p>
           <h3 class="">
+                            <br>
                             <b>Sharing</b>
                         </h3>
           <p class="lead text-danger">- Share URL
@@ -328,6 +328,7 @@
             <br>- Share preview URL&nbsp;
             <br>This is a view only link rendered in any browser. It's useful to share the online page with non-Github users or to test it on different devices. It's served by .... so cannot be used for production, to avoid xxxx github</p>
           <h3 class="">
+                            <br>
                             <b>Pull requests</b>
                             <br>
                             </h3>
