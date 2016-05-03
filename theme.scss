@@ -66,7 +66,7 @@ $font-family-sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif !defaul
 $font-family-serif : Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace : Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base : Lato;
-$headings-line-height:       1.2 !default;
+$headings-line-height : 1.2 !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root : 13px !default;
@@ -173,6 +173,6 @@ h1,h2,h3,p {
 }
 
 .card {
-  no-border-bottom: 4px solid $brand-primary;
+  no-border-bottom : 4px solid $brand-primary;
 }
 
