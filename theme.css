@@ -4938,4 +4938,4 @@ h1, h2, h3 {
       background-image: none; } }
 
 .card {
-  border-bottom: 4px solid #009ed3; }
+  no-border-bottom: 4px solid #009ed3; }
