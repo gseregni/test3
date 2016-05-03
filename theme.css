@@ -4929,7 +4929,7 @@ h1, h2, h3 {
   background-origin: border-box; }
   @media (min-width: 1380px) {
     .github-cover {
-      background-position: 920px bottom; } }
+      background-position: 820px bottom; } }
   @media (max-width: 1379px) {
     .github-cover {
       background-position: 620px bottom; } }
