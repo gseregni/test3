@@ -4206,7 +4206,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.2;
   color: inherit; }
 
 h1 {
@@ -4885,7 +4885,7 @@ a.text-danger:hover {
     max-width: 72.25rem;
   }
 }*/
-h1, h2, h3 {
+h1, h2, h3, p {
   font-weight: 300; }
 
 .container-fluid {
@@ -4929,13 +4929,13 @@ h1, h2, h3 {
   background-origin: border-box; }
   @media (min-width: 1380px) {
     .github-cover {
-      background-position: right bottom; } }
+      background-position: 620px bottom; } }
   @media (max-width: 1379px) {
     .github-cover {
-      background-position: 600px bottom; } }
+      background-position: 620px bottom; } }
   @media (max-width: 991px) {
     .github-cover {
       background-image: none; } }
 
 .card {
-  border-bottom: 4px solid #009ed3; }
+  no-border-bottom: 4px solid #009ed3; }
