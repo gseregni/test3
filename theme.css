@@ -4922,20 +4922,26 @@ h1, h2, h3, p {
   border-bottom: 1px solid #009ed3 !important; }
 
 .github-cover {
-  height: 700px;
+  height: 500px;
   background-image: url("browser.png");
-  background-size: 900px 650px;
+  background-size: 800px 650px;
   background-repeat: no-repeat;
-  background-origin: border-box; }
-  @media (min-width: 1380px) {
-    .github-cover {
-      background-position: 620px bottom; } }
-  @media (max-width: 1379px) {
-    .github-cover {
-      background-position: 620px bottom; } }
-  @media (max-width: 991px) {
-    .github-cover {
-      background-image: none; } }
+  background-origin: border-box;
+  /*
+  @include media-breakpoint-up('xl') {
+    background-position: 620px bottom;  
+    
+  }
+
+
+  @include media-breakpoint-down('lg') {
+    background-position: 620px bottom;  
+  }
+
+  @include media-breakpoint-down('md') {
+    background-image:none;
+  }
+*/ }
 
 .card {
   no-border-bottom: 4px solid #009ed3; }
