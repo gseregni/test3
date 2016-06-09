@@ -9,7 +9,7 @@ $gray-light : #818a91 !default;
 $gray-lighter : #eceeef !default;
 $gray-lightest : #f7f7f9 !default;
 
-$brand-primary : red; 
+$brand-primary : darkred; 
 $brand-success : #5cb85c !default;
 $brand-info : #333;
 $brand-warning : #f0ad4e !default;
@@ -178,8 +178,8 @@ h1,h2,h3,p {
 
 
 html {
-  padding:15px;
+  padding : 15px;
 }
 body {
-  box-shadow: 0px 0px 5px 5px green;
+  box-shadow : 0px 0px 5px 5px green;
 }
