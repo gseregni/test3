@@ -4936,12 +4936,3 @@ h1, h2, h3, p {
   @media (max-width: 991px) {
     .github-cover {
       background-image: none; } }
-
-.card {
-  no-border-bottom: 4px solid darkred; }
-
-html {
-  padding: 15px; }
-
-body {
-  box-shadow: 0px 0px 5px 5px green; }
