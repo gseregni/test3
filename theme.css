@@ -2994,7 +2994,7 @@ button.list-group-item-danger {
 
 .navbar {
   position: relative;
-  padding: 0.5rem 1rem; }
+  padding: 1rem 1rem; }
   .navbar::after {
     content: "";
     display: table;
