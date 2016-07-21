@@ -181,12 +181,12 @@ h1,h2,h3,p {
 
 
 body .section:nth-child(even) {
-  border-bottom: 5px rgba($brand-primary, 0.4) solid !important;
+  border-bottom: 3px rgba($brand-primary, 0.4) solid !important;
 }  
 
 
 body .section:nth-child(odd) {
-  border-bottom: 5px rgba(33,33,33,0.4) solid !important;
+  border-bottom: 3px rgba(33,33,33,0.4) solid !important;
 }  
 
 .card {
