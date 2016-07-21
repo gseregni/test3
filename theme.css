@@ -4885,6 +4885,9 @@ a.text-danger:hover {
     max-width: 72.25rem;
   }
 }*/
+.carousel-slide {
+  transition-duration: 0s !important; }
+
 h1, h2, h3, p {
   font-weight: 300; }
 
