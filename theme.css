@@ -4941,10 +4941,10 @@ h1, h2, h3, p {
     .no-github-cover {
       background-image: none; } }
 
-body .section:nth-child(odd) {
+body .section:nth-child(even) {
   border-bottom: 5px #009ed3 solid !important; }
 
-body .section:nth-child(even) {
+body .section:nth-child(odd) {
   border-bottom: 5px #333 solid !important; }
 
 .card {
