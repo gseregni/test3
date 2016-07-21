@@ -91,9 +91,12 @@ lg: 992px,
 xl: 1380px
 ) !default;
 
-
+$navbar-padding-y:                  ($spacer) !default;
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
+
+
+
 
 h1,h2,h3,p {
   font-weight : 300;
