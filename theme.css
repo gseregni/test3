@@ -4894,9 +4894,6 @@ h1, h2, h3, p {
 .display-4 {
   font-size: 50px; }
 
-.section {
-  position: relative; }
-
 .bottom {
   position: absolute;
   bottom: 10px;
@@ -4921,20 +4918,20 @@ h1, h2, h3, p {
 .b-b {
   border-bottom: 1px solid #009ed3 !important; }
 
-.github-cover {
+.no-github-cover {
   height: 700px;
   background-image: url("browser.png");
   background-size: 900px 650px;
   background-repeat: no-repeat;
   background-origin: border-box; }
   @media (min-width: 1380px) {
-    .github-cover {
+    .no-github-cover {
       background-position: 620px bottom; } }
   @media (max-width: 1379px) {
-    .github-cover {
+    .no-github-cover {
       background-position: 620px bottom; } }
   @media (max-width: 991px) {
-    .github-cover {
+    .no-github-cover {
       background-image: none; } }
 
 .card {
