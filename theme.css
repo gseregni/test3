@@ -4888,6 +4888,10 @@ a.text-danger:hover {
 .carousel-inner > .carousel-item {
   transition-duration: 0s !important; }
 
+body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
 h1, h2, h3, p {
   font-weight: 300; }
 
@@ -4936,6 +4940,12 @@ h1, h2, h3, p {
   @media (max-width: 991px) {
     .no-github-cover {
       background-image: none; } }
+
+body .section:nth-child(odd) {
+  border-bottom: 5px #009ed3 solid !important; }
+
+body .section:nth-child(even) {
+  border-bottom: 5px #333 solid !important; }
 
 .card {
   no-border-bottom: 4px solid #009ed3; }
