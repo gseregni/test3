@@ -96,12 +96,12 @@ $navbar-padding-y : ($spacer) !default;
 @import 'pingendo-bootstrap';
 
 .carousel-inner > .carousel-item {
-  transition-duration: 0s !important;
+  transition-duration : 0s !important;
 }
 
 body {
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width : 100%;
+  overflow-x : hidden;
 }
 h1,h2,h3,p {
   font-weight : 300;
@@ -181,12 +181,12 @@ h1,h2,h3,p {
 
 
 body .section:nth-child(even) {
-  border-bottom: 3px rgba($brand-primary, 0.4) solid !important;
+  border-bottom : 3px rgba($brand-primary, 0.4) solid !important;
 }  
 
 
 body .section:nth-child(odd) {
-  border-bottom: 3px rgba(33,33,33,0.4) solid !important;
+  border-bottom : 3px rgba(33,33,33,0.4) solid !important;
 }  
 
 .card {
