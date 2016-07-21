@@ -65,7 +65,7 @@ $link-hover-decoration : underline !default;
 $font-family-sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif : Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace : Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base : Lato;
+$font-family-base : "Helvetica Neue", Arial;
 $headings-line-height : 1.2 !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
@@ -91,7 +91,7 @@ lg: 992px,
 xl: 1380px
 ) !default;
 
-$navbar-padding-y:                  ($spacer) !default;
+$navbar-padding-y : ($spacer) !default;
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
 
