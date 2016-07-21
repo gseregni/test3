@@ -4942,10 +4942,10 @@ h1, h2, h3, p {
       background-image: none; } }
 
 body .section:nth-child(even) {
-  border-bottom: 5px #009ed3 solid !important; }
+  border-bottom: 5px rgba(0, 158, 211, 0.4) solid !important; }
 
 body .section:nth-child(odd) {
-  border-bottom: 5px #333 solid !important; }
+  border-bottom: 5px rgba(33, 33, 33, 0.4) solid !important; }
 
 .card {
   no-border-bottom: 4px solid #009ed3; }
