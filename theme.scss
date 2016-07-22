@@ -69,7 +69,7 @@ $font-family-base : "Helvetica Neue", Arial;
 $headings-line-height : 1.2 !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root : 13px !default;
+$font-size-root : 14px !default;
 
 $font-size-base : 1rem !default;
 $font-size-lg : 1.25rem !default;
@@ -93,10 +93,10 @@ xl: 1380px
 
 $navbar-padding-y : ($spacer) !default;
 
-$display1-size:               6rem !default;
-$display2-size:               5.5rem !default;
-$display3-size:               4.5rem !default;
-$display4-size:               3.0rem;
+$display1-size : 6rem !default;
+$display2-size : 5.5rem !default;
+$display3-size : 4.5rem !default;
+$display4-size : 3.0rem;
 
 
 
