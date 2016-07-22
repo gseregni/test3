@@ -184,6 +184,9 @@ h1,h2,h3,p {
 
 }
 
+.bg-faded.bg-primary {
+	background-color: rgba($brand-primary, 0.5);
+}
 
 body .section:nth-child(even) {
   border-bottom : 1px rgba(33,33,33, 0.4) solid !important;
