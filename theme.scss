@@ -98,6 +98,9 @@ $display3-size:               30px;
 $display4-size:              	18px;
 
 
+.btn-xl {
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg*1.1, $line-height-lg*1.1, $btn-border-radius-lg);
+}
 
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
