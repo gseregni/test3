@@ -9,21 +9,17 @@
 </head>
 
 <body>
-  <nav class="bg-info navbar navbar-dark navbar-full">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Pingendo</a>
-      <ul class="nav navbar-nav pull-right">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pricing.html">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="active nav-link" href="docs.html">Documentation</a>
-        </li>
-      </ul>
-    </div>
+  <nav class="navbar navbar-dark navbar-full bg-primary">
+    <a class="navbar-brand" href="index.html">Pingendo</a>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="docs.html">Help</a>
+      </li>
+      <a class="btn navbar-btn pull-right btn-primary m-l-2"><i class=" fa fa-github fa-fw"></i>&nbsp;Sign in</a>
+    </ul>
   </nav>
   <div class="section">
     <div class="container-fluid m-y-3 p-y-3">
@@ -34,14 +30,13 @@
               <a href="#" class="nav-link">Introduction</a>
             </li>
             <li class="nav-item m-l-2">
-              <a href="#" class="nav-link">Playground</a>
+              <a href="#" class="nav-link">for Github</a>
             </li>
+
             <li class="nav-item m-l-2">
               <a href="#" class="nav-link">Desktop</a>
             </li>
-            <li class="nav-item m-l-2">
-              <a href="#" class="nav-link">for Github</a>
-            </li>
+
             <li class="nav-item lead">
               <a href="#" class="nav-link">Builder</a>
             </li>
@@ -82,24 +77,29 @@
           <h1 class="">
                             <b>Introduction</b>
                         </h1>
-          <p class="lead text-info">Pingendo is a Bootstrap HTML and Saas builder&nbsp;available in three versions: &nbsp;
+          <p class="lead">Pingendo is a Bootstrap HTML and SASS builder&nbsp;available in two versions: &nbsp;&nbsp;
             <br>
-            <b>Pingendo Playground.&nbsp;</b>Online Bootstrap playground for community and education.&nbsp; Build and share pages and snippets.
+            <br><b>Pingendo -</b>&nbsp;Online builder for teams and clients integrated with Github. &nbsp;Lets non-devs work on Github flow.&nbsp;
+            <br><b>Pingendo Desktop -&nbsp;</b>Desktop builder for developers. It works locally and offline to integrate into the developer's toolset.&nbsp;
             <br>
-            <b>Pingendo Desktop.&nbsp;</b>Desktop builder for developers. It works locally and offline to integrate into the developer's toolset.&nbsp;
-            <br>
-            <b>Pingendo for Github.&nbsp;</b>Online builder for teams and clients integrated with Github. &nbsp;Lets non-devs work on Github flow.
             <br>
             <br>
             <br>
           </p>
+
+
           <h3 class="">
-                            <b>Pingendo Playground</b>
-                        </h3>
-          <p class="lead">Pingendo Playground is a web Bootstrap HTML and Saas playground, available here&nbsp;
-            <a href="#">playground.pingendo.com</a>.
-            <br>You can create, save, and share your creations with others for free.
-            <br>Every page will be saved as a Gist on Github.
+                            <b>Pingendo</b></h3>
+          <p class="lead">Pingendo is a web app that works in Chrome or Safari. Support for other browsers will be added.
+            <br>It integrates with Github API to load and save HTML pages and their assets in repositories.
+            <br>When you access Pingendo, you'll be required to grant Pingendo access to Github API. That's in order to let Pingendo read and save files stored in the repository.
+            <br>
+            <b>We use standard OAuth mechanism provided by Github and we do not store
+                                your password in any way.&nbsp;
+                                <br>
+                            </b>For additional info check out the Github website
+            <a href="https://help.github.com/articles/connecting-with-third-party-applications/">https://help.github.com/articles/connecting-with-third-party-applications/</a>.
+            <br>
             <br>
             <br>
           </p>
@@ -116,24 +116,14 @@
             <br>
             <br>
           </p>
-          <h3 class="">
-                            <b>Pingendo for Github</b>
-                        </h3>
-          <p class="lead text-info">Pingendo for Github is a web app that works in Chrome or Safari. Support for other browsers will be added.
-            <br>It integrates with Github API to load and save HTML pages and their assets in repositories.
-            <br>When you access Pingendo, you'll be required to grant Pingendo access to Github API. That's in order to let Pingendo read and save files stored in the repository. &nbsp;
-            <br>
-            <b>We use standard OAuth mechanism provided by Github and we do not store
-                                your password in any way.&nbsp;
-                                <br>
-                            </b>For additional info check out the Github website
-            <a href="https://help.github.com/articles/connecting-with-third-party-applications/">https://help.github.com/articles/connecting-with-third-party-applications/</a>.</p>
+
+
           <br>
           <hr class="m-y-3">
           <h1 class="" id="builder">
                             <b>Builder</b>
                         </h1>
-          <p class="lead">The builder interface is the same for all three versions and consists of 5 main areas:&nbsp;</p>
+          <p class="lead">The builder interface consists of 5 main areas:&nbsp;</p>
           <div class="row" draggable="true">
             <div class="col-lg-3">
               <p class="lead">1 - Toolbar&nbsp;
@@ -142,12 +132,14 @@
                 <br>Here you can browse and drag pre-made sections and Bootstrap 4 components. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                 <br>
                 <br>3 - Canvas
-                <br>You can drop elements here and make selection to edit text or properties. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                <br>You can drop elements here and make selection to edit text or properties. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                 <br>4 - Page and Selection panels
-                <br>Set Bootstrap properties here. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                <br>Set Bootstrap properties here.&nbsp;
                 <br>
-                <br>5 - Source panel &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                <br>5 - Source panel &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                 <br>Edit HTML and Saas source. &nbsp;&nbsp;
                 <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -177,7 +169,7 @@
           <div class="row">
             <div class="col-lg-7">
               <p class="lead">Click to select an element on canvas and play with its properties in the "SELECTION" panel. &nbsp;&nbsp;
-                <br>Properties are those offered by Bootstrap.
+                <br>Properties are those offered by Bootstrap 4 alpha-2 version.
                 <br>
                 <br>You can select element's parents by the breadcrumb.
                 <br>This is particularly useful when you can't pick an element directly from canvas.
@@ -245,8 +237,8 @@
                             <b>Github integration</b>
                         </h1>
           <p class="lead">
-            <i>This part applies only to Pingendo for Github users. Pingendo Desktop
-                                users should &nbsp;use Github Desktop client instead.</i>
+            <i>This part does not applies to Pingendo Desktop
+                                users.</i>
             <br>
             <br>Pingendo for Github features Github integration to let you work online on pages stored in Github repositories.
             <br>The scope of the integration makes it simple for teams of developers and non developers to efficiently collaborate building static web sites.
@@ -343,7 +335,6 @@
           <p class="lead">(Pull request can be called "Propose change" or "Propose new version" to help non-devs to better understand what it is.)
             <br>Pull requests let you tell others about changes you want to push to the master version.&nbsp;
             <br>Once a pull request is sent, interested parties can review the set of&nbsp;changes, discuss potential modifications, and even push follow-up commits if necessary.
-            <br>
             <br>
           </p>
           <div class="row" draggable="true">
