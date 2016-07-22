@@ -207,5 +207,10 @@ body .section:nth-child(odd) {
   no-border-bottom : 4px solid $brand-primary;
 }
 
+mark {
+  background-color: rgba($brand-primary,1);
+  color: #eee;
+}
+
 
 /* dsf */
