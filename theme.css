@@ -4938,6 +4938,9 @@ h1, h2, h3, p {
     .no-github-cover {
       background-image: none; } }
 
+.bg-faded.bg-primary {
+  background-color: rgba(0, 158, 211, 0.5); }
+
 body .section:nth-child(even) {
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid !important; }
 
