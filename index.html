@@ -275,14 +275,17 @@
                       //"711919235832942593",
                       "716006503094861825", 
                       "718111345124749313"];
+
         var $row = $("#tweets");
 
         $(tweets).each(function(i, t) {
           if (i % 4 == 0) {
+            var $oldrow = $row;
             $row = $row.clone();
+            $oldrow.after($old);
           }
-          var $clone = $("#tweet").clone();
-          $("#tweet").before($clone);
+          var $clone = $("#tweet div").clone();
+          $row.append($clone);
           twttr.widgets.createTweet(this,$clone[0],{conversation:"none", cards : "hidden"});
 
         });
