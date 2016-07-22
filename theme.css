@@ -3796,7 +3796,7 @@ html {
   width: device-width; }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
   -webkit-tap-highlight-color: transparent; }
 
 body {
@@ -4258,11 +4258,11 @@ h6 {
   font-weight: 300; }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 30px;
   font-weight: 300; }
 
 .display-4 {
-  font-size: 3rem;
+  font-size: 18px;
   font-weight: 300; }
 
 hr {
