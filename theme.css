@@ -4898,9 +4898,6 @@ h1, h2, h3, p {
 .container-fluid {
   width: 100%; }
 
-.display-4 {
-  font-size: 50px; }
-
 .bottom {
   position: absolute;
   bottom: 10px;
