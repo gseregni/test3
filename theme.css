@@ -4958,4 +4958,8 @@ body .section:nth-child(odd) {
 .card {
   no-border-bottom: 4px solid #009ed3; }
 
+mark {
+  background-color: #009ed3;
+  color: #eee; }
+
 /* dsf */
