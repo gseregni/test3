@@ -4930,36 +4930,10 @@ h1, h2, h3, p {
 .b-b {
   border-bottom: 1px solid #009ed3 !important; }
 
-.no-github-cover {
-  height: 700px;
-  background-image: url("browser.png");
-  background-size: 900px 650px;
-  background-repeat: no-repeat;
-  background-origin: border-box; }
-  @media (min-width: 1380px) {
-    .no-github-cover {
-      background-position: 620px bottom; } }
-  @media (max-width: 1379px) {
-    .no-github-cover {
-      background-position: 620px bottom; } }
-  @media (max-width: 991px) {
-    .no-github-cover {
-      background-image: none; } }
-
-.bg-faded.bg-primary {
-  background-color: rgba(0, 158, 211, 0.5); }
-
 body .section:nth-child(even) {
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid !important; }
 
 body .section:nth-child(odd) {
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid !important; }
-
-.card {
-  no-border-bottom: 4px solid #009ed3; }
-
-mark {
-  background-color: #009ed3;
-  color: #eee; }
 
 /* dsf */

@@ -178,35 +178,6 @@ h1,h2,h3,p {
 }
 
 
-.no-github-cover {
-
-  height : 700px;
-  background-image : url("browser.png");
-  background-size : 900px 650px;
-  background-repeat : no-repeat;
-  background-origin : border-box;
-
-
-  @include media-breakpoint-up('xl') {
-    background-position: 620px bottom;  
-    
-  }
-
-
-  @include media-breakpoint-down('lg') {
-    background-position: 620px bottom;  
-  }
-
-  @include media-breakpoint-down('md') {
-    background-image:none;
-  }
-
-}
-
-.bg-faded.bg-primary {
-	background-color: rgba($brand-primary, 0.5);
-}
-
 body .section:nth-child(even) {
   border-bottom : 1px rgba(33,33,33, 0.4) solid !important;
 }  
@@ -215,15 +186,6 @@ body .section:nth-child(even) {
 body .section:nth-child(odd) {
   border-bottom : 1px rgba(33,33,33,0.4) solid !important;
 }  
-
-.card {
-  no-border-bottom : 4px solid $brand-primary;
-}
-
-mark {
-  background-color: rgba($brand-primary,1);
-  color: #eee;
-}
 
 
 /* dsf */
