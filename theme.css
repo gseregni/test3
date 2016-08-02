@@ -4931,9 +4931,9 @@ h1, h2, h3, p {
   border-bottom: 1px solid #009ed3 !important; }
 
 body .section:nth-child(even) {
-  border-bottom: 1px rgba(33, 33, 33, 0.4) solid !important; }
+  /*  border-bottom : 1px rgba(33,33,33, 0.4) solid !important;*/ }
 
 body .section:nth-child(odd) {
-  border-bottom: 1px rgba(33, 33, 33, 0.4) solid !important; }
+  /*border-bottom : 1px rgba(33,33,33,0.4) solid !important;*/ }
 
 /* dsf */
