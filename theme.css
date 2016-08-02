@@ -1729,10 +1729,10 @@ input[type="checkbox"].disabled {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 940px; } }
+      max-width: 900px; } }
   @media (min-width: 1380px) {
     .container {
-      max-width: 940px; } }
+      max-width: 900px; } }
 
 .container-fluid {
   margin-left: auto;
