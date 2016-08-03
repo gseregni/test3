@@ -82,7 +82,7 @@ $headings-font-family : inherit !default;
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-$container-max-widths: (
+$container-max-widths : (
   sm: 576px,
   md: 720px,
   lg: 900px,
@@ -105,10 +105,10 @@ xl: 1380px
 
 $navbar-padding-y : ($spacer) !default;
 
-$display1-size:               6rem !default;
-$display2-size:               5.5rem !default;
-$display3-size:               30px;
-$display4-size:              	18px;
+$display1-size : 6rem !default;
+$display2-size : 5.5rem !default;
+$display3-size : 30px;
+$display4-size : 18px;
 
 
 
@@ -118,8 +118,8 @@ $display4-size:              	18px;
 
 .btn-xl {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg * 2, $font-size-lg*1.1, $line-height-lg * 1.2, $btn-border-radius-lg);
-  position:relative;
-  top: -6px;
+  position : relative;
+  top : -6px;
 }
 
 .carousel-inner > .carousel-item {
