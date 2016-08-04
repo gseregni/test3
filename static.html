@@ -1,0 +1,102 @@
+<html manifest="pingendo.appcache">
+<head>
+    <script>
+        var pingendo = true;
+        var debug = false;
+        window.HOST = '';
+        var serial = "seriale_di_prova";
+
+        // function loadScript(url, callback) {
+            
+        //     // Adding the script tag to the head as suggested before
+        //     var head = document.getElementsByTagName('head')[0];
+        //     var script = document.createElement('script');
+        //     script.type = 'text/javascript';
+        //     script.src = url;
+
+        //     // Then bind the event to the callback function.
+        //     // There are several events for cross browser compatibility.
+        //     script.onreadystatechange = callback;
+        //     script.onload = callback;
+
+        //     // Fire the loading
+        //     head.appendChild(script);
+        // }
+
+        // var callback = function(){
+        // }
+
+        // var createSerial = function(){
+        //     return String(Math.floor(Math.random()*1234123412341234)) + String(Math.floor(Math.random()*1234123412341234));
+        // }
+
+        // if(localStorage.serial === undefined)
+        //     localStorage.serial = createSerial();
+            
+        // if(document.location.host.indexOf("127.0.0.1") > -1)
+        //     var GK_CORE_URL = 'http://127.0.0.1:5000/core.js';
+        // else
+        //     var GK_CORE_URL = 'https://pingendo-gk.herokuapp.com/core.js?id='+localStorage.serial;
+        
+        // loadScript(GK_CORE_URL, callback);
+        // cache lifecycle 
+        var appCache = window.applicationCache;
+        // Check if a new cache is available on page load.
+        window.addEventListener('load', function(e) {
+            window.applicationCache.addEventListener('updateready', function(e) {
+                if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+                  // Browser downloaded a new app cache.
+                  if (confirm('A new version of this app is available. Load it?')) {
+                    window.location.reload();
+                  }
+                } else {
+                  // Manifest didn't changed. Nothing new to server.
+                }
+            }, false);
+        }, false);
+
+    </script>
+    
+    <style>
+        .loader {
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          z-index: 100000;
+          background-color: #333;
+          color:white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    </style>
+    <link rel="icon" href="pingendo.ico">
+</head>
+<body>
+  
+	<div class="loader"><i class="fa fa-spin fa-3x fa-circle-o-notch text-x"></i></div>
+
+  <script>
+      var s=document.createElement('script');
+      s.setAttribute("type","text/javascript");
+      if (window.location.host.indexOf(".com") != -1)
+        s.setAttribute("src", "//github.pingendo.com.s3.amazonaws.com/sass.js");
+      else
+        s.setAttribute("src", "//localhost:5000/sass.js");
+      console.log("jkj");
+      document.getElementsByTagName("head")[0].appendChild(s);
+
+      s = document.createElement('script');
+      s.setAttribute("type","text/javascript")
+      if (window.location.host.indexOf(".com") != -1)
+        s.setAttribute("src", "//github.pingendo.com.s3.amazonaws.com/core.js");
+      else
+        s.setAttribute("src", "//localhost:5000/core.js");
+      document.getElementsByTagName("head")[0].appendChild(s);
+
+  </script>
+
+</body>
+</html>
