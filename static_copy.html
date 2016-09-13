@@ -1,0 +1,250 @@
+<html>
+
+<head>
+  <link rel="icon" href="pingendo.ico">
+  <title>Pingendo - Bootstrap 4 builder</title>
+  <meta name="keywords" content="Bootstrap 4 builder">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="theme.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,100,200,300" rel="stylesheet" type="text/css">
+  <style>
+
+  </style>
+</head>
+
+<body class="text-xs-center">
+  <nav class="navbar navbar-dark navbar-full bg-inverse">
+    <a class="navbar-brand m-l-2" href="index.html">Pingendo</a>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="docs.html">Help</a>
+      </li>
+      <a class="btn navbar-btn pull-right btn-primary m-l-2 text-inverse"><i class=" fa fa-github fa-fw"></i>&nbsp;Sign in</a>
+    </ul>
+  </nav>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+  <script type="text/javascript" src="http://www.google-analytics.com/ga.js" async=""></script>
+  <script type="text/javascript" src="http://www.google-analytics.com/ga.js" async=""></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+  <script>
+    window.twttr = (function(d, s, id) {
+                                                                                                                                                                                                                                                                                                                                                var js, fjs = d.getElementsByTagName(s)[0],
+                                                                                                                                                                                                                                                                                                                                                    t = window.twttr || {};
+                                                                                                                                                                                                                                                                                                                                                if (d.getElementById(id)) return t;
+                                                                                                                                                                                                                                                                                                                                                js = d.createElement(s);
+                                                                                                                                                                                                                                                                                                                                                js.id = id;
+                                                                                                                                                                                                                                                                                                                                                js.src = "https://platform.twitter.com/widgets.js";
+                                                                                                                                                                                                                                                                                                                                                fjs.parentNode.insertBefore(js, fjs);
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                t._e = [];
+                                                                                                                                                                                                                                                                                                                                                t.ready = function(f) {
+                                                                                                                                                                                                                                                                                                                                                  t._e.push(f);
+                                                                                                                                                                                                                                                                                                                                                };
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                return t;
+                                                                                                                                                                                                                                                                                                                                              }(document, "script", "twitter-wjs"));
+  </script>
+  <script>
+    $(document).ready(function() {
+                                                                                                                                                                                                                                                                                                                                                twttr.widgets.load();
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                var tweets = ["603209060117282816",
+                                                                                                                                                                                                                                                                                                                                                              "605221652863942656",
+                                                                                                                                                                                                                                                                                                                                                             /* "634471435881152512",
+                                                                                                                                                                                                                                                                                                                                                              "634855664871870464",
+                                                                                                                                                                                                                                                                                                                                                              "635320464470970368",
+                                                                                                                                                                                                                                                                                                                                                              "635927592780959745",
+                                                                                                                                                                                                                                                                                                                                                              "639088400717492224",
+                                                                                                                                                                                                                                                                                                                                                              "651480544652333056",
+                                                                                                                                                                                                                                                                                                                                                              "652782572402044930",
+                                                                                                                                                                                                                                                                                                                                                              "663089293901082624",
+                                                                                                                                                                                                                                                                                                                                                              "667717781677342720",
+                                                                                                                                                                                                                                                                                                                                                              "670840491504566274",
+                                                                                                                                                                                                                                                                                                                                                              "671706927525699584",
+                                                                                                                                                                                                                                                                                                                                                              "696041778407936000",
+                                                                                                                                                                                                                                                                                                                                                              "702236436444094464",
+                                                                                                                                                                                                                                                                                                                                                              "702942254197936129",
+                                                                                                                                                                                                                                                                                                                                                              //"711919235832942593",*/
+                                                                                                                                                                                                                                                                                                                                                              "716006503094861825", 
+                                                                                                                                                                                                                                                                                                                                                              "718111345124749313"].reverse();
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                var $row = $("#tweet");
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                $(tweets).each(function(i, t) {
+                                                                                                                                                                                                                                                                                                                                                  console.log(i % 4);
+                                                                                                                                                                                                                                                                                                                                                  if (i % 4 == 0) {
+                                                                                                                                                                                                                                                                                                                                                    console.log("create row");
+                                                                                                                                                                                                                                                                                                                                                    var $oldrow = $row;
+                                                                                                                                                                                                                                                                                                                                                    $row = $oldrow.clone();
+                                                                                                                                                                                                                                                                                                                                                    $row.empty();
+                                                                                                                                                                                                                                                                                                                                                    $oldrow.after($row);
+                                                                                                                                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                  // var $clone = $("#tweet div");
+                                                                                                                                                                                                                                                                                                                                                  // console.log("--", $clone);
+                                                                                                                                                                                                                                                                                                                                                  // $row.append($clone);
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  var $c = $("<div class='col col-md-3'></div>");
+                                                                                                                                                                                                                                                                                                                                                  $row.append($c);
+                                                                                                                                                                                                                                                                                                                                                  twttr.widgets.createTweet(this,$c[0],{conversation:"none", cards : "hidden"});
+                                                                                                                                                                                                                                                                                                                                                });
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                var isChrome = /Chrome/.test(navigator.userAgent) ;
+                                                                                                                                                                                                                                                                                                                                                var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+                                                                                                                                                                                                                                                                                                                                                console.log("IS CHROM ", isChrome); 
+                                                                                                                                                                                                                                                                                                                                                if (isChrome) {
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                  $("#playgroundBtn").html("Try now in Chrome");
+                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                else if (isSafari)
+                                                                                                                                                                                                                                                                                                                                                  $("#playgroundBtn").html("Try now in Safari");
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                              });
+  </script>
+  <script>
+    var _gaq = _gaq || [];
+                                                                                                                                                                                                                                                                                                                                              _gaq.push(['_setAccount', 'UA-29443235-1']);
+                                                                                                                                                                                                                                                                                                                                              _gaq.push(['_trackPageview']);
+                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                              (function() {
+                                                                                                                                                                                                                                                                                                                                                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                                                                                                                                                                                                                                                                                                                                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                                                                                                                                                                                                                                                                                                                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                                                                                                                                                                                                                                                                                                                                              })();
+  </script>
+  <iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"></iframe>
+  <div class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" type="button">×</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p class="display-3">Choose&nbsp;</p>
+          <div class="card">
+            <div class="card-block">
+              <form class="text-xs-left">
+                <div class="radio">
+                  <label class="lead">
+                    <input type="radio" value="option1" checked="">&nbsp;I don't have an existing repository, i just want to create a new one
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>Choose a name for the project</label>
+                  <input type="text" class="form-control" placeholder="Text">
+                </div>
+              </form>
+            </div>
+
+          </div>
+          <div class="card">
+
+            <div class="card-block">
+              <form class="text-xs-left">
+                <div class="radio">
+                  <label class="lead">
+                    <input type="radio" value="option1" checked="">&nbsp;I want to connect to an existing repository</label>
+                </div>
+                <div class="form-group">
+                  <label>Choose a name for the project</label>
+                  <input type="text" class="form-control" placeholder="Text">
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-default" data-dismiss="modal">Close</a>
+          <a class="btn btn-primary">Save
+                changes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" type="button">×</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p class="display-3">Connect to a Github project</p>
+          <div class="card">
+            <div class="card-block">
+              <form class="text-xs-left">
+
+                <div class="form-group">
+                  <div class="col-xs-4">
+
+                  </div>
+                  <label>Choose a name for the project</label>
+                  <input type=" placeholder=">
+
+
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-4">
+
+                  </div>
+                  x
+                  <input type=" placeholder=">
+
+
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-4">
+
+                  </div>
+                  <label>Choose a name for the project</label>
+                  <input type=" placeholder=">
+
+
+                </div>
+
+                <label>Choose a name for the project</label>
+                <input type="text" class="form-control" placeholder="Text">
+              </form>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-default" data-dismiss="modal">Close</a>
+          <a class="btn btn-primary">Save
+                changes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
