@@ -4936,4 +4936,7 @@ body .section:nth-child(even) {
 body .section:nth-child(odd) {
   /*border-bottom : 1px rgba(33,33,33,0.4) solid !important;*/ }
 
+.bg-faded {
+  background-color: #818a91; }
+
 /* dsf */
