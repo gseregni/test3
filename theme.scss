@@ -86,7 +86,7 @@ $container-max-widths : (
   sm: 576px,
   md: 720px,
   lg: 900px,
-  xl: 900px
+  xl: 901px
 ) !default;
 
 
@@ -112,15 +112,11 @@ $display4-size : 18px;
 
 
 
-@import 'bootstrap';
+@import 'bootstrap-4.0.0-alpha.4';
 @import 'pingendo-bootstrap';
 
 
-.btn-xl {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg * 2, $font-size-lg*1.1, $line-height-lg * 1.2, $btn-border-radius-lg);
-  position : relative;
-  top : -6px;
-}
+
 
 .carousel-inner > .carousel-item {
   transition-duration : 0s !important;
