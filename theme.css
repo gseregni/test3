@@ -2336,7 +2336,7 @@ input[type="checkbox"].disabled {
 .img-thumbnail {
   padding: 0.25rem;
   line-height: 1.5;
-  background-color: purple;
+  background-color: cyan;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out;
@@ -2946,7 +2946,7 @@ button.list-group-item-danger {
   .nav-tabs .nav-item.open .nav-link:focus,
   .nav-tabs .nav-item.open .nav-link:hover {
     color: #55595c;
-    background-color: purple;
+    background-color: cyan;
     border-color: #ddd #ddd transparent; }
 
 .nav-pills::after {
@@ -3804,7 +3804,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
-  background-color: purple; }
+  background-color: cyan; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -3988,7 +3988,7 @@ output {
   .table tbody + tbody {
     border-top: 2px solid #eceeef; }
   .table .table {
-    background-color: purple; }
+    background-color: cyan; }
 
 .table-sm th,
 .table-sm td {
