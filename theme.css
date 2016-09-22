@@ -330,22 +330,22 @@ fieldset[disabled] a.btn {
     border-color: #009ed3; }
 
 .btn-secondary {
-  color: red;
+  color: yellow;
   background-color: #fff;
   border-color: #ccc; }
   .btn-secondary:hover {
-    color: red;
+    color: yellow;
     background-color: #e6e6e6;
     border-color: #adadad; }
   .btn-secondary:focus,
   .btn-secondary.focus {
-    color: red;
+    color: yellow;
     background-color: #e6e6e6;
     border-color: #adadad; }
   .btn-secondary:active,
   .btn-secondary.active,
   .open > .btn-secondary.dropdown-toggle {
-    color: red;
+    color: yellow;
     background-color: #e6e6e6;
     border-color: #adadad;
     background-image: none; }
@@ -358,7 +358,7 @@ fieldset[disabled] a.btn {
     .open > .btn-secondary.dropdown-toggle:hover,
     .open > .btn-secondary.dropdown-toggle:focus,
     .open > .btn-secondary.dropdown-toggle.focus {
-      color: red;
+      color: yellow;
       background-color: #d4d4d4;
       border-color: #8c8c8c; }
   .btn-secondary.disabled:focus,
@@ -1159,7 +1159,7 @@ pre {
   margin-bottom: 1rem;
   font-size: 90%;
   line-height: 1.5;
-  color: red; }
+  color: yellow; }
   pre code {
     padding: 0;
     font-size: inherit;
@@ -1364,14 +1364,14 @@ pre {
   clear: both;
   font-weight: normal;
   line-height: 1.5;
-  color: red;
+  color: yellow;
   text-align: inherit;
   white-space: nowrap;
   background: none;
   border: 0; }
   .dropdown-item:focus,
   .dropdown-item:hover {
-    color: #e60000;
+    color: #e5e600;
     text-decoration: none;
     background-color: #f5f5f5; }
   .dropdown-item.active,
@@ -4072,7 +4072,7 @@ output {
 
 .thead-inverse th {
   color: #fff;
-  background-color: red; }
+  background-color: yellow; }
 
 .thead-default th {
   color: #55595c;
@@ -4080,7 +4080,7 @@ output {
 
 .table-inverse {
   color: #eceeef;
-  background-color: red; }
+  background-color: yellow; }
   .table-inverse.table-bordered {
     border: 0; }
   .table-inverse th,
@@ -4327,7 +4327,7 @@ mark,
 
 .bg-inverse {
   color: #eceeef;
-  background-color: red; }
+  background-color: yellow; }
 
 .bg-faded {
   background-color: #f7f7f9; }
