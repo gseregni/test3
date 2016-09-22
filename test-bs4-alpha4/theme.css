@@ -330,22 +330,22 @@ fieldset[disabled] a.btn {
     border-color: #009ed3; }
 
 .btn-secondary {
-  color: yellow;
+  color: red;
   background-color: #fff;
   border-color: #ccc; }
   .btn-secondary:hover {
-    color: yellow;
+    color: red;
     background-color: #e6e6e6;
     border-color: #adadad; }
   .btn-secondary:focus,
   .btn-secondary.focus {
-    color: yellow;
+    color: red;
     background-color: #e6e6e6;
     border-color: #adadad; }
   .btn-secondary:active,
   .btn-secondary.active,
   .open > .btn-secondary.dropdown-toggle {
-    color: yellow;
+    color: red;
     background-color: #e6e6e6;
     border-color: #adadad;
     background-image: none; }
@@ -358,7 +358,7 @@ fieldset[disabled] a.btn {
     .open > .btn-secondary.dropdown-toggle:hover,
     .open > .btn-secondary.dropdown-toggle:focus,
     .open > .btn-secondary.dropdown-toggle.focus {
-      color: yellow;
+      color: red;
       background-color: #d4d4d4;
       border-color: #8c8c8c; }
   .btn-secondary.disabled:focus,
@@ -1159,7 +1159,7 @@ pre {
   margin-bottom: 1rem;
   font-size: 90%;
   line-height: 1.5;
-  color: yellow; }
+  color: red; }
   pre code {
     padding: 0;
     font-size: inherit;
@@ -1364,14 +1364,14 @@ pre {
   clear: both;
   font-weight: normal;
   line-height: 1.5;
-  color: yellow;
+  color: red;
   text-align: inherit;
   white-space: nowrap;
   background: none;
   border: 0; }
   .dropdown-item:focus,
   .dropdown-item:hover {
-    color: #e5e600;
+    color: #e60000;
     text-decoration: none;
     background-color: #f5f5f5; }
   .dropdown-item.active,
@@ -2336,7 +2336,7 @@ input[type="checkbox"].disabled {
 .img-thumbnail {
   padding: 0.25rem;
   line-height: 1.5;
-  background-color: cyan;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out;
@@ -2946,7 +2946,7 @@ button.list-group-item-danger {
   .nav-tabs .nav-item.open .nav-link:focus,
   .nav-tabs .nav-item.open .nav-link:hover {
     color: #55595c;
-    background-color: cyan;
+    background-color: #fff;
     border-color: #ddd #ddd transparent; }
 
 .nav-pills::after {
@@ -3804,7 +3804,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
-  background-color: cyan; }
+  background-color: #fff; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -3988,7 +3988,7 @@ output {
   .table tbody + tbody {
     border-top: 2px solid #eceeef; }
   .table .table {
-    background-color: cyan; }
+    background-color: #fff; }
 
 .table-sm th,
 .table-sm td {
@@ -4072,7 +4072,7 @@ output {
 
 .thead-inverse th {
   color: #fff;
-  background-color: yellow; }
+  background-color: red; }
 
 .thead-default th {
   color: #55595c;
@@ -4080,7 +4080,7 @@ output {
 
 .table-inverse {
   color: #eceeef;
-  background-color: yellow; }
+  background-color: red; }
   .table-inverse.table-bordered {
     border: 0; }
   .table-inverse th,
@@ -4327,7 +4327,7 @@ mark,
 
 .bg-inverse {
   color: #eceeef;
-  background-color: yellow; }
+  background-color: red; }
 
 .bg-faded {
   background-color: #f7f7f9; }
