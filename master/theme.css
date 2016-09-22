@@ -4254,15 +4254,15 @@ h6 {
   font-weight: 300; }
 
 .display-2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300; }
 
 .display-3 {
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: 300; }
 
 .display-4 {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 300; }
 
 hr {
@@ -4935,8 +4935,5 @@ body .section:nth-child(even) {
 
 body .section:nth-child(odd) {
   /*border-bottom : 1px rgba(33,33,33,0.4) solid !important;*/ }
-
-.bg-faded {
-  background-color: #eceeef; }
 
 /* dsf */
