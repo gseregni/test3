@@ -254,7 +254,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
-  background-color: yellow; }
+  background-color: green; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -530,7 +530,7 @@ dl.row > dd + dt {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: yellow;
+  background-color: green;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out;
@@ -1269,7 +1269,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #eceeef; }
   .table .table {
-    background-color: yellow; }
+    background-color: green; }
 
 .table-sm th,
 .table-sm td {
@@ -2847,7 +2847,7 @@ input[type="button"].btn-block {
   .nav-tabs .nav-item.open .nav-link:focus,
   .nav-tabs .nav-item.open .nav-link:hover {
     color: #55595c;
-    background-color: yellow;
+    background-color: green;
     border-color: #ddd #ddd transparent; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
