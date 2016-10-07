@@ -112,12 +112,12 @@ $display4-size : 18px;
 
 
 
-@import 'bootstrap';
+@import 'bootstrap-4.0.0-alpha.4';
 @import 'pingendo-bootstrap';
 
 
 .btn-xl {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg * 2, $font-size-lg*1.1, $line-height-lg * 1.2, $btn-border-radius-lg);
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg * 2, $font-size-lg*1.1, $btn-border-radius-lg);
   position : relative;
   top : -6px;
 }
