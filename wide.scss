@@ -1,0 +1,196 @@
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark : #373a3c !default;
+$gray : #55595c !default;
+$gray-light : #818a91 !default;
+$gray-lighter : #eceeef !default;
+$gray-lightest : #f7f7f9 !default;
+
+$brand-primary : #009ed3; 
+$brand-success : #5cb85c !default;
+$brand-info : white;
+$brand-warning : #f0ad4e !default;
+$brand-danger : #d9534f !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-flex : false !default;
+$enable-rounded : true !default;
+$enable-shadows : false !default;
+$enable-gradients : false !default;
+$enable-transitions : false !default;
+$enable-hover-media-query : false !default;
+$enable-grid-classes : true !default;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+
+$spacer : 1rem !default;
+$spacer-x : $spacer !default;
+$spacer-y : $spacer !default;
+$border-width : 1px !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg : white ;
+$body-color : #373a3c !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color : $brand-primary !default;
+$link-decoration : none !default;
+$link-hover-color : darken($link-color, 15%) !default;
+$link-hover-decoration : underline !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace : Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base : "Helvetica Neue", Arial;
+$headings-line-height : 1.2 !default;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root : 16px !default;
+
+$font-size-base : 1rem !default;
+$font-size-lg : 1.25rem !default;
+$font-size-sm : .875rem !default;
+$font-size-xs : .75rem !default;
+
+$headings-font-family : inherit !default;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths : (
+  sm: 576px,
+  md: 720px,
+  lg: 900px,
+  xl: 900px
+) !default;
+
+
+$grid-breakpoints : (
+// Extra small screen / phone
+xs: 0,
+// Small screen / phone
+sm: 544px,
+// Medium screen / tablet
+md: 768px,
+// Large screen / desktop
+lg: 992px,
+// Extra large screen / wide desktop
+xl: 1380px
+) !default;
+
+$navbar-padding-y : ($spacer) !default;
+
+$display1-size : 2.5rem !default;
+$display2-size : 2rem !default;
+$display3-size : 30px;
+$display4-size : 18px;
+
+
+
+@import 'bootstrap-4.0.0-alpha.4';
+@import 'pingendo-bootstrap';
+
+
+.btn-xl {
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg * 2, $font-size-lg*1.1, $btn-border-radius-lg);
+  position : relative;
+  top : -6px;
+}
+
+.carousel-inner > .carousel-item {
+  transition-duration : 0s !important;
+}
+
+body {
+  max-width : 100%;
+  overflow-x : hidden;
+}
+h1,h2,h3,p {
+/*  font-weight : 300;*/
+}
+
+
+.container-fluid {
+  width : 100%;
+}
+
+
+.section {
+}
+
+.bottom {
+  position : absolute;
+  bottom : 10px;
+  left : 0px;
+  width : 100%;
+  text-align : center;
+}
+
+.bottom a:hover {
+  color : white;
+}
+
+.section.bg-primary {
+  a {
+    color:white;
+  }
+}
+
+
+.btn-primary.disabled {
+  text-decoration : line-through !important;
+  background-color : $brand-primary !important;
+  opacity : 1;
+}
+
+
+.b-t {
+  border-top : 4px solid $brand-primary !important;
+}
+
+.b-b {
+  border-bottom : 1px solid $brand-primary !important;
+}
+
+
+body .section:nth-child(even) {
+/*  border-bottom : 1px rgba(33,33,33, 0.4) solid !important;*/
+}  
+
+
+body .section:nth-child(odd) {
+  /*border-bottom : 1px rgba(33,33,33,0.4) solid !important;*/
+}  
+
+
+.bg-faded {
+  background-color: $gray-lighter;
+} 
+
+
+/* dsf */
