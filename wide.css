@@ -613,7 +613,7 @@ pre {
       max-width: 900px; } }
   @media (min-width: 1380px) {
     .container {
-      max-width: 900px; } }
+      max-width: 1200px; } }
 
 .container-fluid {
   margin-left: auto;
