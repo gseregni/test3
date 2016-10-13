@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,100,200,300" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#list">
   <nav class="navbar navbar-dark navbar-full bg-primary">
     <a class="navbar-brand" href="index.html">Pingendo</a>
     <ul class="nav navbar-nav pull-right">
@@ -24,27 +24,40 @@
   <div class="p-y-3 section">
     <div class="container-fluid">
       <div class="row">
-
         <div class="col-md-2">
-            <ul class="list-group list-group-flush" data-toggle="sticky-onscroll">
-              <li class="list-group-item">
-               <b class="text-muted">Quick start</b>
-              </li>
-              <li class="list-group-item">
-                <b class="text-muted">Project browser</b></li>
-              <li class="list-group-item active">
-                <a class="card-title m-a-0 text-primary"><b class="text-inverse">Page builder</b></a></li>
-              <li class="list-group-item">Overview</li>
-              <li class="list-group-item">Sections and components</li>
-              <li class="list-group-item">Grid</li>
-              <li class="list-group-item">Components customization</li>
-              <li class="list-group-item">Themes</li>
-              <li class="list-group-item">Generated source</li>
-              <li class="list-group-item">
-                <b class="text-muted">Project browser</b></li>
-            </ul>
+          <ul class="list-group list-group-flush" data-toggle="sticky-onscroll" id="list">
+            <li class="list-group-item bg-faded">
+              <b class="text-muted">Quick start</b>
+            </li>
+            <li class="list-group-item bg-faded">
+              <b class="text-muted">
+                                    <a href="./projectbrowser.html" class="text-muted">Project dashboard</a>
+                                </b>
+            </li>
+            <li class="list-group-item active">
+              <a class="card-title m-a-0 text-primary"><b class="text-inverse">Page builder</b></a>
+            </li>
+            <li class="list-group-item nav-link">
+              <a href="#canvas" class="nav-link">Canvas</a>
+            </li>
+            <li class="list-group-item nav-link">
+              <a href="#sections" class="nav-link">Sections</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#components">Components</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#page">Page</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#selection">Selection</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#codeeditor">Code editor</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-9 p-l-3">
+        <div class="col-lg-9 p-l-3  ">
           <div class="row">
             <div class="col-md-7  ">
               <h1 class="text-primary">Page builder</h1>
@@ -67,10 +80,7 @@
               <p class="lead">To start mocking up a new page you can drag snippets of pre-made sections or stock Bootstrap 4 components.
                 <br>
               </p>
-
-
               <p class="lead"></p>
-
             </div>
             <div class="col-md-5 ">
               <img src="../Schermata 2016-04-20 alle 11.25.11.png" class="img-fluid">
@@ -78,16 +88,21 @@
           </div>
           <div class="row m-y-2">
             <div class="col-md-7">
-              <h4 class="text-primary">Canvas</h4>
+              <h4 class="text-primary" id="canvas">Canvas</h4>
               <p class="lead">The canvas show your document.&nbsp;
-                <br>You can <b>drop</b> elements ot it.
-                <br><b>Click </b>to select elements and play with their properties in the "SELECTION" panel.
+                <br>You can
+                <b>drop</b>elements ot it.
                 <br>
-                <br><b>Double click</b> to edit text
-                <br>You can rearrange the grid <b>dragging</b> the vertical helper.
+                <b>Click</b>to select elements and play with their properties in the "SELECTION" panel.
+                <br>
+                <br>
+                <b>Double click</b>to edit text
+                <br>You can rearrange the grid
+                <b>dragging</b>the vertical helper.
                 <br>To effectively work with the grid you should have some knowledge on how it works. It's easy and you show read this.
                 <br>
-                <br>The <b>ESC</b> key moves your selection one parent up.</p>
+                <br>The
+                <b>ESC</b>key moves your selection one parent up.</p>
             </div>
             <div class="col-md-5 ">
               <img src="../Schermata 2016-04-20 alle 11.25.11.png" class="img-fluid">
@@ -95,10 +110,33 @@
           </div>
           <div class="row m-y-2">
             <div class="col-md-7 ">
-              <h4 class="text-primary">Sections and components panel</h4>
+              <h4 class="text-primary">
+                                    <a id="sections">Sections</a>
+                                </h4>
               <p class="lead">You can browse a curated collection of snippets
-                <br><b>Click</b> to insert after the selection
-                <br><b>Drag</b> onto canvas to insert where highlited.
+                <br>
+                <b>Click</b>to insert after the selection
+                <br>
+                <b>Drag</b>onto canvas to insert where highlited.
+                <br>The icons at the top of the panel switches the theme for placeholder images.
+                <br>
+                <br>
+              </p>
+            </div>
+            <div class="col-md-5 ">
+              <img src="../Schermata 2016-04-20 alle 11.25.11.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="row m-y-2">
+            <div class="col-md-7 ">
+              <h4 class="text-primary">
+                                    <a id="components">Components</a>
+                                </h4>
+              <p class="lead">You can browse a curated collection of snippets
+                <br>
+                <b>Click</b>to insert after the selection
+                <br>
+                <b>Drag</b>onto canvas to insert where highlited.
                 <br>The icons at the top of the panel switches the theme for placeholder images.
                 <br>
                 <br>
@@ -150,55 +188,45 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-        // Custom 
-        var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-          var stickyHeight = sticky.outerHeight();
-
-          var stickyWidth = stickyWrapper.width();
-          var stickyTop = stickyWrapper.offset().top;
-          if (scrollElement.scrollTop() >= stickyTop){
-              sticky.width(stickyWidth);
-              sticky.css("position", "fixed");
-              sticky.css("top", 20);
-          }
-          else{
-            sticky.css("position", null);
-            sticky.width(null);
-            sticky.css("top","");
-          }
-        };
-
-        // Find all data-toggle="sticky-onscroll" elements
-        $('[data-toggle="sticky-onscroll"]').each(function() {
-          var sticky = $(this);
-          var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-          sticky.before(stickyWrapper);
-          sticky.addClass('sticky');
-
-          // Scroll & resize events
-          $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-            stickyToggle(sticky, stickyWrapper, $(this));
-          });
-
-          // On page load
-          stickyToggle(sticky, stickyWrapper, $(window));
-        });
-      });
+                                // Custom 
+                                var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+                                  var stickyHeight = sticky.outerHeight();
+                        
+                                  var stickyWidth = stickyWrapper.width();
+                                  var stickyTop = stickyWrapper.offset().top;
+                                  if (scrollElement.scrollTop() >= stickyTop){
+                                      sticky.width(stickyWidth);
+                                      sticky.css("position", "fixed");
+                                      sticky.css("top", 20);
+                                  }
+                                  else{
+                                    sticky.css("position", null);
+                                    sticky.width(null);
+                                    sticky.css("top","");
+                                  }
+                                };
+                        
+                                // Find all data-toggle="sticky-onscroll" elements
+                                $('[data-toggle="sticky-onscroll"]').each(function() {
+                                  var sticky = $(this);
+                                  var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+                                  sticky.before(stickyWrapper);
+                                  sticky.addClass('sticky');
+                        
+                                  // Scroll & resize events
+                                  $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+                                    stickyToggle(sticky, stickyWrapper, $(this));
+                                  });
+                        
+                                  // On page load
+                                  stickyToggle(sticky, stickyWrapper, $(window));
+                                });
+                              });
   </script>
-
-
-
-
 
 
 </body>

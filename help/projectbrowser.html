@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,100,200,300" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#list">
   <nav class="navbar navbar-dark navbar-full bg-primary">
     <a class="navbar-brand" href="index.html">Pingendo</a>
     <ul class="nav navbar-nav pull-right">
@@ -22,12 +22,39 @@
     </ul>
   </nav>
   <div class="p-y-3 section">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-12 ">
+        <div class="col-md-2">
+          <ul class="list-group list-group-flush" data-toggle="sticky-onscroll" id="list">
+            <li class="list-group-item bg-faded">
+              <b class="text-muted">Quick start</b>
+            </li>
+            <li class="list-group-item bg-faded active text-inverse">
+              <b class="text-inverse">Project dashboard</b>
+            </li>
+            <li class="list-group-item nav-link"><a href="#">Repository</a></li>
+            <li class="list-group-item nav-link">
+              <a href="#canvas" class="nav-link">File browser</a>
+            </li>
+            <li class="list-group-item nav-link">
+              <a href="#">Account</a></li>
+            <li class="list-group-item bg-faded">
+              <a class="card-title m-a-0 text-primary"><b class="text-muted"><a href="./pagebuilder.html" class="text-muted">Page builder</a></b>
+              </a>
+            </li>
+
+
+
+
+
+
+
+          </ul>
+        </div>
+        <div class="col-lg-9 p-l-3  ">
           <div class="row">
             <div class="col-md-7  ">
-              <h1 class="text-primary">Project browser</h1>
+              <h1 class="text-primary">Project dashboard</h1>
               <p class="lead">Pingendo lets you build good-looking and perfectly coded HTML pages, deadly fast.
                 <br>
               </p>
@@ -55,7 +82,7 @@
           </div>
           <div class="row m-y-2">
             <div class="col-md-7">
-              <h4 class="text-primary">Canvas</h4>
+              <h4 class="text-primary" id="canvas">Canvas</h4>
               <p class="lead">The canvas show your document.&nbsp;
                 <br>You can
                 <b>drop</b>elements ot it.
@@ -77,8 +104,10 @@
           </div>
           <div class="row m-y-2">
             <div class="col-md-7 ">
-              <h4 class="text-primary">Sections and components panel</h4>
-              <p class="lead">You can browse a curated collection of snippets top-level sections a
+              <h4 class="text-primary">
+                                    <a id="sections">Sections</a>
+                                </h4>
+              <p class="lead">You can browse a curated collection of snippets
                 <br>
                 <b>Click</b>to insert after the selection
                 <br>
@@ -92,13 +121,17 @@
               <img src="../Schermata 2016-04-20 alle 11.25.11.png" class="img-fluid">
             </div>
           </div>
-          <div class="row">
+          <div class="row m-y-2">
             <div class="col-md-7 ">
-              <h4 class="text-primary">Page panel</h4>
-              <p class="lead">You can modify SEO tag for the page and customize its Sass theme.&nbsp;
-                <br>To check which SASS theme is attached to page or to choose a new one, look at the FILE property of the page tab.
-                <br>You can play with most common Saas variables, such as colors, typography and the grid.
-                <br>If you need to customize more you can edit the Sass source directly.&nbsp;
+              <h4 class="text-primary">
+                                    <a id="components">Components</a>
+                                </h4>
+              <p class="lead">You can browse a curated collection of snippets
+                <br>
+                <b>Click</b>to insert after the selection
+                <br>
+                <b>Drag</b>onto canvas to insert where highlited.
+                <br>The icons at the top of the panel switches the theme for placeholder images.
                 <br>
                 <br>
               </p>
@@ -107,11 +140,23 @@
               <img src="../Schermata 2016-04-20 alle 11.25.11.png" class="img-fluid">
             </div>
           </div>
-          <div class="row">
+          <div class="row m-y-2">
+            <div class="col-md-7 ">
+              <h4 class="text-primary">Page panel</h4>
+              <p class="lead">You can modify SEO tag for the page and customize the Sass theme.
+                <br>To check which Sass theme is attached to page or to choose a new one, look at the FILE property of the page tab.&nbsp;
+                <br>You can edit colors, typography and grid variables. If you need to customize more you can edit the Sass source directly. &nbsp;</p>
+            </div>
+            <div class="col-md-5 ">
+              <img src="../Schermata 2016-04-20 alle 11.25.11.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="row m-y-2">
             <div class="col-md-7 ">
               <h4 class="text-primary">Selection panel</h4>
-              <p class="lead">lets you control the properties of UI elements selected in the main window.&nbsp;
-                <br>These properties include all the Bootstrap 4 properties.
+              <p class="lead">Show information about currently selected element.
+                <br>The top part show the hierarchy&nbsp;
+                <br>The properties include all the Bootstrap 4 properties.
                 <br>
                 <br>
                 <br>
@@ -124,12 +169,10 @@
           <div class="row">
             <div class="col-md-7 ">
               <h4 class="text-primary">Code editor</h4>
-              <p class="lead">lets you control the properties of UI elements selected in the main window.&nbsp;
-                <br>These properties include all the Bootstrap 4 properties.
-                <br>
-                <br>
-                <br>
-              </p>
+              <p class="lead">If you are working on something more than a quick mockup, you can get your hands dirty by using the HTML and Sass editor in the bottom tab.&nbsp;
+                <br>The editor is live, so the canvas will update realtime to reflect changes and vice versa. &nbsp;
+                <br>Pingendo works only with proper and valid HTML documents. &nbsp;
+                <br>Preprocessors (like PHP) or HTML fragments (like Angular templates) are not supported and won't be saved correctly.&nbsp;</p>
             </div>
             <div class="col-md-5 ">
               <img src="../Schermata 2016-04-20 alle 11.25.11.png" class="img-fluid">
@@ -139,6 +182,45 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+                        // Custom 
+                        var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+                          var stickyHeight = sticky.outerHeight();
+                
+                          var stickyWidth = stickyWrapper.width();
+                          var stickyTop = stickyWrapper.offset().top;
+                          if (scrollElement.scrollTop() >= stickyTop){
+                              sticky.width(stickyWidth);
+                              sticky.css("position", "fixed");
+                              sticky.css("top", 20);
+                          }
+                          else{
+                            sticky.css("position", null);
+                            sticky.width(null);
+                            sticky.css("top","");
+                          }
+                        };
+                
+                        // Find all data-toggle="sticky-onscroll" elements
+                        $('[data-toggle="sticky-onscroll"]').each(function() {
+                          var sticky = $(this);
+                          var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+                          sticky.before(stickyWrapper);
+                          sticky.addClass('sticky');
+                
+                          // Scroll & resize events
+                          $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+                            stickyToggle(sticky, stickyWrapper, $(this));
+                          });
+                
+                          // On page load
+                          stickyToggle(sticky, stickyWrapper, $(window));
+                        });
+                      });
+  </script>
 
 
 </body>
