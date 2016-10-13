@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,100,200,300" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#list">
   <nav class="navbar navbar-dark navbar-full bg-primary">
     <a class="navbar-brand" href="index.html">Pingendo</a>
     <ul class="nav navbar-nav pull-right">
@@ -25,7 +25,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2">
-          <ul class="list-group list-group-flush" data-toggle="sticky-onscroll">
+          <ul class="list-group list-group-flush" data-toggle="sticky-onscroll" id="list">
             <li class="list-group-item bg-faded">
               <b class="text-muted">Quick start</b>
             </li>
@@ -195,6 +195,8 @@
                 });
               });
   </script>
+
+
 
 
 </body>
