@@ -166,9 +166,11 @@
         // Custom 
         var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
           var stickyHeight = sticky.outerHeight();
+          var stickyHeight = sticky.outerWidth();
           var stickyTop = stickyWrapper.offset().top;
           if (scrollElement.scrollTop() >= stickyTop){
             stickyWrapper.height(stickyHeight);
+              stickyWrapper.width(stickyWidth);
             sticky.addClass("is-sticky");
           }
           else{
@@ -194,6 +196,8 @@
         });
       });
   </script>
+
+
 
 
 
