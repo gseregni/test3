@@ -7,7 +7,7 @@ $gray-dark : #373a3c !default;
 $gray : #55595c !default;
 $gray-light : #818a91 !default;
 $gray-lighter : #eceeef !default;
-$gray-lightest : #f7f7f9 !default;
+$gray-lightest : #f7f7f9 !default; 
 
 $brand-primary : #009ed3; 
 $brand-success : #5cb85c !default;
@@ -86,7 +86,7 @@ $container-max-widths : (
   sm: 576px,
   md: 720px,
   lg: 900px,
-  xl: 900px
+  xl: 1200px
 ) !default;
 
 
@@ -191,13 +191,6 @@ body .section:nth-child(odd) {
 .bg-faded {
   background-color: $gray-lighter;
 } 
- 
-.sticky.is-sticky { 
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  width: 20%;
-}
+
+
 /* dsf */
