@@ -28,6 +28,14 @@
           <ul>
             <li>
               <a href="#">Quick start</a>
+              <ul>
+                <li>
+                  <a href="">Desktop client</a>
+                </li>
+                <li>
+                  <a href="">Web client</a>
+                </li>
+              </ul>
             </li>
             <li>Reference
               <ul>
@@ -36,8 +44,6 @@
                 </li>
                 <li>
                   <a href="">Web client</a>
-
-
                 </li>
               </ul>
             </li>
@@ -49,17 +55,13 @@
             <br>
             <br>
             <b>Web client -</b>&nbsp;Online builder for teams and clients integrated with Github. &nbsp;Lets non-devs work on Github flow.&nbsp;
-            <br><b>Desktop client -&nbsp;</b>Desktop builder for developers. It works locally and offline to integrate into the developer's toolset.&nbsp;
             <br>
-          </p><img class="center-block img-fluid m-x-auto d-block" src="../Schermata 2016-04-21 alle 10.59.54.png"><img class="center-block img-fluid m-x-auto d-block" src="../Schermata 2016-04-21 alle 10.59.54.png">
-          <p class="lead">Pingendo lets you build good-looking and perfectly coded HTML pages, deadly fast.&nbsp;
-            <br>
-            <br>To start mocking up a new page you can drag needed elements from the "SECTIONS" and "COMPONENTS" panels.
-            <br>Pre-made sections are those commonly used in site development. &nbsp;
-            <br>Components are all those available on Bootstrap 4. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <br>
+            <b>Desktop client -&nbsp;</b>Desktop builder for developers. It works locally and offline to integrate into the developer's toolset.&nbsp;
             <br>
           </p>
+
+
+
         </div>
       </div>
     </div>
@@ -68,41 +70,43 @@
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-                                                                                        // Custom 
-                                                                                        var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-                                                                                          var stickyHeight = sticky.outerHeight();
-                                                                                
-                                                                                          var stickyWidth = stickyWrapper.width();
-                                                                                          var stickyTop = stickyWrapper.offset().top;
-                                                                                          if (scrollElement.scrollTop() >= stickyTop){
-                                                                                              sticky.width(stickyWidth);
-                                                                                              sticky.css("position", "fixed");
-                                                                                              sticky.css("top", 20);
-                                                                                          }
-                                                                                          else{
-                                                                                            sticky.css("position", null);
-                                                                                            sticky.width(null);
-                                                                                            sticky.css("top","");
-                                                                                          }
-                                                                                        };
-                                                                                
-                                                                                        // Find all data-toggle="sticky-onscroll" elements
-                                                                                        $('[data-toggle="sticky-onscroll"]').each(function() {
-                                                                                          var sticky = $(this);
-                                                                                          var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-                                                                                          sticky.before(stickyWrapper);
-                                                                                          sticky.addClass('sticky');
-                                                                                
-                                                                                          // Scroll & resize events
-                                                                                          $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-                                                                                            stickyToggle(sticky, stickyWrapper, $(this));
-                                                                                          });
-                                                                                
-                                                                                          // On page load
-                                                                                          stickyToggle(sticky, stickyWrapper, $(window));
-                                                                                        });
-                                                                                      });
+                                                                                                // Custom 
+                                                                                                var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+                                                                                                  var stickyHeight = sticky.outerHeight();
+                                                                                        
+                                                                                                  var stickyWidth = stickyWrapper.width();
+                                                                                                  var stickyTop = stickyWrapper.offset().top;
+                                                                                                  if (scrollElement.scrollTop() >= stickyTop){
+                                                                                                      sticky.width(stickyWidth);
+                                                                                                      sticky.css("position", "fixed");
+                                                                                                      sticky.css("top", 20);
+                                                                                                  }
+                                                                                                  else{
+                                                                                                    sticky.css("position", null);
+                                                                                                    sticky.width(null);
+                                                                                                    sticky.css("top","");
+                                                                                                  }
+                                                                                                };
+                                                                                        
+                                                                                                // Find all data-toggle="sticky-onscroll" elements
+                                                                                                $('[data-toggle="sticky-onscroll"]').each(function() {
+                                                                                                  var sticky = $(this);
+                                                                                                  var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+                                                                                                  sticky.before(stickyWrapper);
+                                                                                                  sticky.addClass('sticky');
+                                                                                        
+                                                                                                  // Scroll & resize events
+                                                                                                  $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+                                                                                                    stickyToggle(sticky, stickyWrapper, $(this));
+                                                                                                  });
+                                                                                        
+                                                                                                  // On page load
+                                                                                                  stickyToggle(sticky, stickyWrapper, $(window));
+                                                                                                });
+                                                                                              });
   </script>
+
+
 
 
 </body>
