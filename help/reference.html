@@ -71,34 +71,40 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-10 p-l-3">
+        <div class="col-lg-8 p-l-3">
           <div class="row">
-            <div class="col-md-6  ">
-              <h1 class="text-primary">Page builder</h1>
-              <p class="">Pingendo lets you build good-looking and perfectly coded HTML pages, deadly fast.
+            <div class="col-md-12  ">
+              <h1 class="text-primary">Pingendo web client</h1>
+              <p class="">Pingendo is a web app that works in Chrome or Safari. Support for other browsers will be added. It integrates with Github API to load and save HTML pages and their assets in repositories. When you access Pingendo, you'll be required to grant
+                Pingendo access to Github API. That's in order to let Pingendo read and save files stored in the repository. We use standard OAuth mechanism provided by Github and we do not store your password in any way. For additional info check out
+                the Github website https://help.github.com/articles/connecting-with-third-party-applications/. &nbsp;
+                <br>
+                <br>
                 <br>
               </p>
-              <p class="">The builder interface consists of 4 main areas:&nbsp;</p>
-              <ul class="">
-                <li>Canvas</li>
-                <li>Sections and components
-                  <br>
-                </li>
-                <li>Page and selection
-                  <br>
-                </li>
-                <li>Code editor
-                  <br>
-                </li>
-              </ul>
-              <p class="">To start mocking up a new page you can drag snippets of pre-made sections or stock Bootstrap 4 components.
+              <h2 class="text-primary">Project dashboard</h2>
+              <p class="">The repository page is divided into three columns:
                 <br>
-              </p>
+                <br>1 - Repository browser
+                <br>This shows collaborators and allows collaborators to browse and select versions.
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                <br>2 - Files browser
+                <br>- select pages and assets contained in the current&nbsp;version
+                <br>- view status changes on files
+                <br>
+                <br>3 - Preview
+                <br>- open file in the builder
+                <br>- open file in the browser
+                <br>- make actions on file</p>
+              <h2 class="text-primary">Page builder</h2><img src="../Schermata 2016-04-20 alle 11.25.11.png" class="img-fluid">
+
+
+
+
               <p class="lead"></p>
             </div>
-            <div class="col-md-6  ">
-              <img src="../Schermata 2016-04-20 alle 11.25.11.png" class="img-fluid">
-            </div>
+
           </div>
           <div class="row m-y-2">
             <div class="col-md-6">
@@ -118,7 +124,6 @@
                 <br>The
                 <b>ESC</b>key moves your selection one parent up.</p>
             </div>
-
           </div>
           <div class="row m-y-2">
             <div class="col-md-12 ">
@@ -135,7 +140,6 @@
                 <br>
               </p>
             </div>
-
           </div>
           <div class="row m-y-2">
             <div class="col-md-6 ">
@@ -152,7 +156,6 @@
                 <br>
               </p>
             </div>
-
           </div>
           <div class="row m-y-2">
             <div class="col-md-6 ">
@@ -161,7 +164,6 @@
                 <br>To check which Sass theme is attached to page or to choose a new one, look at the FILE property of the page tab.&nbsp;
                 <br>You can edit colors, typography and grid variables. If you need to customize more you can edit the Sass source directly. &nbsp;</p>
             </div>
-
           </div>
           <div class="row m-y-2">
             <div class="col-md-6 ">
@@ -174,7 +176,6 @@
                 <br>
               </p>
             </div>
-
           </div>
           <div class="row">
             <div class="col-md-6 ">
@@ -184,7 +185,6 @@
                 <br>Pingendo works only with proper and valid HTML documents. &nbsp;
                 <br>Preprocessors (like PHP) or HTML fragments (like Angular templates) are not supported and won't be saved correctly.&nbsp;</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -194,40 +194,40 @@
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-                                                                        // Custom 
-                                                                        var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-                                                                          var stickyHeight = sticky.outerHeight();
-                                                                
-                                                                          var stickyWidth = stickyWrapper.width();
-                                                                          var stickyTop = stickyWrapper.offset().top;
-                                                                          if (scrollElement.scrollTop() >= stickyTop){
-                                                                              sticky.width(stickyWidth);
-                                                                              sticky.css("position", "fixed");
-                                                                              sticky.css("top", 20);
-                                                                          }
-                                                                          else{
-                                                                            sticky.css("position", null);
-                                                                            sticky.width(null);
-                                                                            sticky.css("top","");
-                                                                          }
-                                                                        };
-                                                                
-                                                                        // Find all data-toggle="sticky-onscroll" elements
-                                                                        $('[data-toggle="sticky-onscroll"]').each(function() {
-                                                                          var sticky = $(this);
-                                                                          var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-                                                                          sticky.before(stickyWrapper);
-                                                                          sticky.addClass('sticky');
-                                                                
-                                                                          // Scroll & resize events
-                                                                          $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-                                                                            stickyToggle(sticky, stickyWrapper, $(this));
-                                                                          });
-                                                                
-                                                                          // On page load
-                                                                          stickyToggle(sticky, stickyWrapper, $(window));
-                                                                        });
-                                                                      });
+                                                                                // Custom 
+                                                                                var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+                                                                                  var stickyHeight = sticky.outerHeight();
+                                                                        
+                                                                                  var stickyWidth = stickyWrapper.width();
+                                                                                  var stickyTop = stickyWrapper.offset().top;
+                                                                                  if (scrollElement.scrollTop() >= stickyTop){
+                                                                                      sticky.width(stickyWidth);
+                                                                                      sticky.css("position", "fixed");
+                                                                                      sticky.css("top", 20);
+                                                                                  }
+                                                                                  else{
+                                                                                    sticky.css("position", null);
+                                                                                    sticky.width(null);
+                                                                                    sticky.css("top","");
+                                                                                  }
+                                                                                };
+                                                                        
+                                                                                // Find all data-toggle="sticky-onscroll" elements
+                                                                                $('[data-toggle="sticky-onscroll"]').each(function() {
+                                                                                  var sticky = $(this);
+                                                                                  var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+                                                                                  sticky.before(stickyWrapper);
+                                                                                  sticky.addClass('sticky');
+                                                                        
+                                                                                  // Scroll & resize events
+                                                                                  $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+                                                                                    stickyToggle(sticky, stickyWrapper, $(this));
+                                                                                  });
+                                                                        
+                                                                                  // On page load
+                                                                                  stickyToggle(sticky, stickyWrapper, $(window));
+                                                                                });
+                                                                              });
   </script>
 
 
