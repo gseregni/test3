@@ -613,7 +613,7 @@ pre {
       max-width: 900px; } }
   @media (min-width: 1380px) {
     .container {
-      max-width: 900px; } }
+      max-width: 1200px; } }
 
 .container-fluid {
   margin-left: auto;
@@ -5054,13 +5054,5 @@ body .section:nth-child(odd) {
 
 .bg-faded {
   background-color: #eceeef; }
-
-.sticky.is-sticky {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  width: 20%; }
 
 /* dsf */
