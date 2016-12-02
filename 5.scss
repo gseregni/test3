@@ -5,11 +5,19 @@
 
 .cover {
 	min-height:100%;
-  display:table;
-  width: 100%;
+
 	.container {
-    display: table-cell;
-	  vertical-align: middle;
+    height: 100%;
+    background-color:red;
+    .row {
+    height: 100%;
+			display: table;
+    } 
+    div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
+            display:table-cell;
+      vertical-align: middle;
+      min-height:100%;
+    }
   }
   
 }
