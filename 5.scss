@@ -4,6 +4,29 @@
 // the Bootstrap defaults without modifying key, versioned files.
 
 
+.cover {
+
+
+	.container {
+
+    background-color:red;
+    
+    .row {
+      width:100%;
+	    height: 100%;
+    } 
+    
+    div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
+      min-height:100% !important;
+      height:100% !important;
+      background-color:green;
+      align-items: center;
+     
+     
+    }
+  }
+  
+}
 
 // Table of Contents
 //
@@ -111,7 +134,7 @@ $brand-inverse:             $gray-dark !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-flex:               false !default;
+$enable-flex:               true !default;
 $enable-rounded:            true !default;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
@@ -934,28 +957,3 @@ $pre-scrollable-max-height:   340px !default;
 @import 'bootstrap-4.0.0-alpha.5';
 
 
-
-.cover {
-	min-height:100%;
-
-	.container {
-    height: 100%;
-    background-color:red;
-    
-    .row {
-      width:100%;
-	    height: 100%;
-			display: table !important;
-    } 
-    
-    div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
-      float:none !important;
-		 display: table-cell !important;
-	  	vertical-align: middle !important;
-      min-height:100% !important;
-      height:100% !important; 
-      background-color:green;
-    }
-  }
-  
-}
