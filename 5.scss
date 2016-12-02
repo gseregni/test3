@@ -3,7 +3,11 @@
 // Copy settings from this file into the provided `_custom.scss` to override
 // the Bootstrap defaults without modifying key, versioned files.
 
+body > * {
+  background-size: cover;
+  background-repeat: none;
 
+}
 .cover {
 	.container, .container-fluid {
   	min-height:100% !important;
