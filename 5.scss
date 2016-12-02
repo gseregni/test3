@@ -4,6 +4,14 @@
 // the Bootstrap defaults without modifying key, versioned files.
 
 .cover {
+
+	.container {
+    width: 100%;
+  	display: table-cell;
+	  vertical-align: middle;
+  	min-height: 100%;
+  }
+  
 }
 
 
