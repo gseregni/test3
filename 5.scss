@@ -10,13 +10,14 @@
     height: 100%;
     background-color:red;
     .row {
+      width:100%;
     height: 100%;
-			display: table;
+			display: table !important;
     } 
     div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
-            display:table-cell;
-      vertical-align: middle;
-      min-height:100%;
+            display:table-cell !important;
+      vertical-align: middle !important;
+      min-height:100% !important;
     }
   }
   
