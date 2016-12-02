@@ -5,22 +5,12 @@
 
 
 .cover {
-
-
 	.container {
-  min-height:100% !important;
-      height:100% !important;
-      background-color:green;
-
-      display:flex;
-      flex-direction: column;
-			justify-content:center;
-			
-    .col, div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
-     
-    }
+  	min-height:100% !important;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
   }
-  
 }
 
 // Table of Contents
@@ -129,7 +119,7 @@ $brand-inverse:             $gray-dark !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-flex:               false !default;
+$enable-flex:               true !default;
 $enable-rounded:            true !default;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
