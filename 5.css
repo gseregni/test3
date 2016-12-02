@@ -1,10 +1,12 @@
 .cover {
-  height: 100%; }
+  min-height: 100%; }
   .cover .container {
     width: 100%;
-    display: table-cell;
     vertical-align: middle;
-    min-height: 100%; }
+    min-height: 100%;
+    display: table; }
+    .cover .container .row {
+      display: table-row; }
 
 /*!
  * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
