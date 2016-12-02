@@ -3,7 +3,7 @@
   .cover .container .row {
     width: 100%;
     height: 100%; }
-  .cover .container div[class*="col-xs-"], .cover .container div[class*="col-sm-"], .cover .container div[class*="col-md-"], .cover .container div[class*="col-lg-"], .cover .container div[class*="col-xl-"] {
+  .cover .container .col, .cover .container div[class*="col-xs-"], .cover .container div[class*="col-sm-"], .cover .container div[class*="col-md-"], .cover .container div[class*="col-lg-"], .cover .container div[class*="col-xl-"] {
     min-height: 100% !important;
     height: 100% !important;
     background-color: green;
