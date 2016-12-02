@@ -15,9 +15,10 @@
 			display: table !important;
     } 
     div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
-            display:table-cell !important;
-      vertical-align: middle !important;
+ display: table-cell !important;
+  vertical-align: middle !important;
       min-height:100% !important;
+      background-color:green;
     }
   }
   
