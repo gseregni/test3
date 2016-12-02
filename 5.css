@@ -7,7 +7,9 @@
     min-height: 100% !important;
     height: 100% !important;
     background-color: green;
-    align-items: center; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 /*!
  * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
