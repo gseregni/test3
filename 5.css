@@ -4,12 +4,13 @@
     height: 100%;
     background-color: red; }
     .cover .container .row {
+      width: 100%;
       height: 100%;
-      display: table; }
+      display: table !important; }
     .cover .container div[class*="col-xs-"], .cover .container div[class*="col-sm-"], .cover .container div[class*="col-md-"], .cover .container div[class*="col-lg-"], .cover .container div[class*="col-xl-"] {
-      display: table-cell;
-      vertical-align: middle;
-      min-height: 100%; }
+      display: table-cell !important;
+      vertical-align: middle !important;
+      min-height: 100% !important; }
 
 /*!
  * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
