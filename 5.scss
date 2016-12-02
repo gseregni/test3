@@ -4,7 +4,7 @@
 // the Bootstrap defaults without modifying key, versioned files.
 
 .cover {
-
+	height:100%;
 	.container {
     width: 100%;
   	display: table-cell;
@@ -121,7 +121,7 @@ $brand-inverse:             $gray-dark !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-flex:               true !default;
+$enable-flex:               false !default;
 $enable-rounded:            true !default;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
