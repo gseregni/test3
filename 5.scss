@@ -3,29 +3,6 @@
 // Copy settings from this file into the provided `_custom.scss` to override
 // the Bootstrap defaults without modifying key, versioned files.
 
-.cover {
-	min-height:100%;
-
-	.container {
-    height: 100%;
-    background-color:red;
-    
-    .row {
-      width:100%;
-	    height: 100%;
-			display: table !important;
-    } 
-    
-    div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
-		 display: table-cell !important;
-	  	vertical-align: middle !important;
-      min-height:100% !important;
-      height:100% !important; 
-      background-color:green;
-    }
-  }
-  
-}
 
 
 // Table of Contents
@@ -955,3 +932,30 @@ $pre-scrollable-max-height:   340px !default;
 
 
 @import 'bootstrap-4.0.0-alpha.5';
+
+
+
+.cover {
+	min-height:100%;
+
+	.container {
+    height: 100%;
+    background-color:red;
+    
+    .row {
+      width:100%;
+	    height: 100%;
+			display: table !important;
+    } 
+    
+    div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
+      float:none !important;
+		 display: table-cell !important;
+	  	vertical-align: middle !important;
+      min-height:100% !important;
+      height:100% !important; 
+      background-color:green;
+    }
+  }
+  
+}
