@@ -16,13 +16,11 @@
 	    height: 100%;
     } 
     
-    div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
+    .col, div[class*="col-xs-"], div[class*="col-sm-"], div[class*="col-md-"], div[class*="col-lg-"], div[class*="col-xl-"] {
       min-height:100% !important;
       height:100% !important;
       background-color:green;
       align-items: center;
-     
-     
     }
   }
   
