@@ -10,7 +10,8 @@
     .cover .container div[class*="col-xs-"], .cover .container div[class*="col-sm-"], .cover .container div[class*="col-md-"], .cover .container div[class*="col-lg-"], .cover .container div[class*="col-xl-"] {
       display: table-cell !important;
       vertical-align: middle !important;
-      min-height: 100% !important; }
+      min-height: 100% !important;
+      background-color: green; }
 
 /*!
  * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
