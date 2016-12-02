@@ -11,6 +11,7 @@
       display: table-cell !important;
       vertical-align: middle !important;
       min-height: 100% !important;
+      height: 100% !important;
       background-color: green; }
 
 /*!
