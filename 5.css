@@ -2,7 +2,6 @@
   min-height: 100% !important;
   height: 100% !important;
   background-color: green;
-  display: flex;
   flex-direction: column;
   justify-content: center; }
 
