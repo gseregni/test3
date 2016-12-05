@@ -1,6 +1,7 @@
 body > * {
   background-size: cover;
-  background-repeat: none; }
+  background-repeat: none;
+  background-position: center; }
 
 .cover .container, .cover .container-fluid {
   min-height: 100% !important;
