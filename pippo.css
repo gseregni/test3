@@ -6276,7 +6276,7 @@ body > * {
   background-repeat: none;
   background-position: center; }
 
-.cover2 .container, .cover2 .container-fluid {
+.cover .container, .cover .container-fluid {
   min-height: 100% !important;
   display: flex;
   flex-direction: column;
