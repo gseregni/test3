@@ -113,7 +113,6 @@ $display4-size : 18px;
 
 
 @import 'bootstrap-4.0.0-alpha.5';
-@import 'pingendo-bootstrap';
 
 
 .btn-xl {
@@ -201,3 +200,20 @@ body .section:nth-child(odd) {
   width: 20%;
 }
 /* dsf */
+
+
+
+// custom CSS for Pingendo
+
+body > * {
+  background-size: cover;
+  background-repeat: none;
+  background-position: center ;
+}
+ 
+.cover .container, .cover .container-fluid {
+  min-height:100% !important;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+}
