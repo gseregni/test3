@@ -6262,6 +6262,9 @@ a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+.bt-1 {
+  border-top: 2px solid #009ed3; }
+
 body > * {
   background-size: cover;
   background-repeat: none;
