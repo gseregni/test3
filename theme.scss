@@ -114,7 +114,9 @@ $display4-size : 18px;
 
 @import 'bootstrap-4.0.0-alpha.5';
 
-
+.bt-1 {
+  border-top: 2px solid $brand-primary;
+}
 
 
 // custom CSS for Pingendo
