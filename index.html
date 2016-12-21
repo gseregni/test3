@@ -69,9 +69,48 @@
       </div>
     </div>
   </div>
-  <div class="py-5 bg-primary text-white">
+  <style>
+    #snapshot {
+      content: "";
+      position: relative;
+      overflow: hidden;
+    }
+    
+    #snapshot > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: .4;
+    }
+  </style>
+  <div class="py-5 bg-primary text-white" id="snapshot">
+    <img src="">
     <div class="container">
-      <div class="row text-center">
+      <div class="row">
+        <div class="col-md-8  offset-md-2">
+          <div id="carousel-example-generic" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="First slide">
+                <div class="carousel-caption">
+                  <h2>Carousel</h2>
+                  <p>Slide #1</p>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="icon-prev" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="icon-next" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center m-5">
         <p class="lead text-xs-center"></p>
         <div class="col-md-3 text-xs-center">
           <i class="fa fa-fw  fa-3x fa-html5"></i>
@@ -231,6 +270,12 @@
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
   <script src="//platform.twitter.com/widgets.js" id="twitter-wjs"></script>
+
+
+
+
+
+
 
 
 </body>
