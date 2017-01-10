@@ -62,18 +62,20 @@
           </ul>
         </div>
         <div class="col">
-          <h1 class="display-2 text-primary">Getting started with Pingendo
-            <br>
-          </h1>
-          <p class="lead mb-5 d-inline text-muted">This page explains how to get started</p>
+
+
           <hr class="">
           <p class="lead mb-5 d-inline"></p>
           <br>
           <br>
           <br>
+          <h1 class="display-2 text-primary">Getting started with Pingendo
+            <br>
+          </h1>
           <div class="row">
             <div class="col-md-7">
-              <h1 class="display-3 text-primary">Login</h1>
+              <p class="lead mb-5 d-inline text-muted">This page explains how to get started</p>
+              <h1 class="display-3 text-primary"><br>Login</h1>
               <p class="">Point your browser to
                 <a href="#">pingendo.com/me</a>
                 <br>You'll be
@@ -83,7 +85,7 @@
                 <br>You'll be required to grant Pingendo permissions to work with Github.
                 <br>For additional info check out the Github website.</p>
             </div>
-            <div class="col-md-5 ">
+            <div class="col-md-5  ">
               <img class="center-block img-fluid mx-auto d-block" src="login.png?2">
             </div>
           </div>
@@ -94,7 +96,8 @@
               <p class="">Once logged in your account page you can click on the "Create a project" button.
                 <br>Pick a name and choose if you want to make it public or private.
                 <br>
-              </p><img class="center-block img-fluid mx-auto d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg">
+              </p>
+
               <img class="mh-3 w-100 d-block" src="account.png">
             </div>
           </div>
@@ -115,8 +118,8 @@
           </ul>
           <p>To start build double click on
             <b>index.html</b>
-          </p>
-          <img class="center-block img-fluid d-block" src="https://p4com-herokuapp-com.global.ssl.fastly.net/assets/photos/wireframe/photo-1.jpg" width="600px">
+          </p><img class="mh-3 w-100 d-block" src="account.png">
+
           <hr class="">
           <h1 class="display-1 mt-5">Build a page</h1>
           <p>When you open a page in Pingendo you'll find our visual editor.
@@ -144,40 +147,40 @@
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-                                                                        // Custom 
-                                                                        var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-                                                                          var stickyHeight = sticky.outerHeight();
-                                                                
-                                                                          var stickyWidth = stickyWrapper.width();
-                                                                          var stickyTop = stickyWrapper.offset().top;
-                                                                          if (scrollElement.scrollTop() >= stickyTop){
-                                                                            sticky.width(stickyWidth);
-                                                                            sticky.css("position", "fixed");
-                                                                            sticky.css("top", 20);
-                                                                          }
-                                                                          else{
-                                                                            sticky.css("position", null);
-                                                                            sticky.width(null);
-                                                                            sticky.css("top","");
-                                                                          }
-                                                                        };
-                                                                
-                                                                        // Find all data-toggle="sticky-onscroll" elements
-                                                                        $('[data-toggle="sticky-onscroll"]').each(function() {
-                                                                          var sticky = $(this);
-                                                                          var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-                                                                          sticky.before(stickyWrapper);
-                                                                          sticky.addClass('sticky');
-                                                                
-                                                                          // Scroll & resize events
-                                                                          $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-                                                                            stickyToggle(sticky, stickyWrapper, $(this));
-                                                                          });
-                                                                
-                                                                          // On page load
-                                                                          stickyToggle(sticky, stickyWrapper, $(window));
-                                                                        });
-                                                                      });
+                                                                                // Custom 
+                                                                                var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+                                                                                  var stickyHeight = sticky.outerHeight();
+                                                                        
+                                                                                  var stickyWidth = stickyWrapper.width();
+                                                                                  var stickyTop = stickyWrapper.offset().top;
+                                                                                  if (scrollElement.scrollTop() >= stickyTop){
+                                                                                    sticky.width(stickyWidth);
+                                                                                    sticky.css("position", "fixed");
+                                                                                    sticky.css("top", 20);
+                                                                                  }
+                                                                                  else{
+                                                                                    sticky.css("position", null);
+                                                                                    sticky.width(null);
+                                                                                    sticky.css("top","");
+                                                                                  }
+                                                                                };
+                                                                        
+                                                                                // Find all data-toggle="sticky-onscroll" elements
+                                                                                $('[data-toggle="sticky-onscroll"]').each(function() {
+                                                                                  var sticky = $(this);
+                                                                                  var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+                                                                                  sticky.before(stickyWrapper);
+                                                                                  sticky.addClass('sticky');
+                                                                        
+                                                                                  // Scroll & resize events
+                                                                                  $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+                                                                                    stickyToggle(sticky, stickyWrapper, $(this));
+                                                                                  });
+                                                                        
+                                                                                  // On page load
+                                                                                  stickyToggle(sticky, stickyWrapper, $(window));
+                                                                                });
+                                                                              });
   </script>
 
 
