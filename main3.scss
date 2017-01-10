@@ -8,6 +8,8 @@ $display1-size: 4rem !default;
 $display2-size: 3.5rem !default;
 $display3-size: 3.0rem !default;
 $display4-size: 2.5rem !default;
+$font-weight-normal: 200 !default;
+
 
 // Table of Contents
 //
@@ -190,7 +192,7 @@ $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
 $font-size-xs:   .75rem !default;
 
-$font-weight-normal: normal !default;
+$font-weight-normal: 200 !default;
 $font-weight-bold: bold !default;
 
 $font-weight-base: $font-weight-normal !default;
