@@ -4,14 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/theme.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,100,200,300" rel="stylesheet" type="text/css">
 </head>
 
 <body data-spy="scroll" data-target="#list">
   <nav class="navbar navbar-inverse navbar-full bg-primary navbar-toggleable ">
     <a class="navbar-brand" href="/index.html">Pingendo</a>
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="nav navbar-nav pull-right ml-auto">
         <li class="nav-item">
@@ -30,13 +29,13 @@
         <div class="col-md-2">
           <ul class="nav nav-pills  nav-stacked m-b-3 flex-column">
             <li class="nav-item">
-              <a href="#" class="nav-link disabled"><b>How-to</b></a>
+              <a class="nav-link disabled" href="#"><b>How-to</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="getting-started.html">Getting started</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="editor.html">Work with page builder</a>
+              <a href="editor.html" class="nav-link active">Work with page builder</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="desktop.html">Destkop version</a>
@@ -44,32 +43,24 @@
           </ul>
           <ul class="nav nav-pills  nav-stacked">
             <li class="nav-item">
-              <a href="#" class="nav-link disabled"><b>UI reference</b></a>
+              <a class="nav-link disabled" href="#"><b>UI reference</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="ref-editor.html">Editor<br></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ref-account.html">Account page</a>
+              <a href="ref-account.html" class="nav-link">Account page</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="ref-project.html">Project page</a>
             </li>
           </ul>
         </div>
-        <div class="col-lg-9  offset-md-4">
-
+        <div class="col  offset-md-4">
           <div class="d-flex flex-column">
-            <p class="p-2 bg-primary m-2">
-              uno
-            </p>
-
-            <p class="p-2 bg-primary m-2">
-              due
-            </p>
-
+            <p class="p-2 bg-primary m-2">uno</p>
+            <p class="p-2 bg-primary m-2">due</p>
           </div>
-
           <h1 class="display-1">Getting started with Pingendo
             <br>
           </h1>
@@ -124,47 +115,41 @@
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() {
-        // Custom 
-        var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-          var stickyHeight = sticky.outerHeight();
-
-          var stickyWidth = stickyWrapper.width();
-          var stickyTop = stickyWrapper.offset().top;
-          if (scrollElement.scrollTop() >= stickyTop){
-            sticky.width(stickyWidth);
-            sticky.css("position", "fixed");
-            sticky.css("top", 20);
-          }
-          else{
-            sticky.css("position", null);
-            sticky.width(null);
-            sticky.css("top","");
-          }
-        };
-
-        // Find all data-toggle="sticky-onscroll" elements
-        $('[data-toggle="sticky-onscroll"]').each(function() {
-          var sticky = $(this);
-          var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-          sticky.before(stickyWrapper);
-          sticky.addClass('sticky');
-
-          // Scroll & resize events
-          $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-            stickyToggle(sticky, stickyWrapper, $(this));
-          });
-
-          // On page load
-          stickyToggle(sticky, stickyWrapper, $(window));
-        });
-      });
+                // Custom 
+                var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+                  var stickyHeight = sticky.outerHeight();
+        
+                  var stickyWidth = stickyWrapper.width();
+                  var stickyTop = stickyWrapper.offset().top;
+                  if (scrollElement.scrollTop() >= stickyTop){
+                    sticky.width(stickyWidth);
+                    sticky.css("position", "fixed");
+                    sticky.css("top", 20);
+                  }
+                  else{
+                    sticky.css("position", null);
+                    sticky.width(null);
+                    sticky.css("top","");
+                  }
+                };
+        
+                // Find all data-toggle="sticky-onscroll" elements
+                $('[data-toggle="sticky-onscroll"]').each(function() {
+                  var sticky = $(this);
+                  var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+                  sticky.before(stickyWrapper);
+                  sticky.addClass('sticky');
+        
+                  // Scroll & resize events
+                  $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+                    stickyToggle(sticky, stickyWrapper, $(this));
+                  });
+        
+                  // On page load
+                  stickyToggle(sticky, stickyWrapper, $(window));
+                });
+              });
   </script>
-
-
-
-
-
-
 
 
 
