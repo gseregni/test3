@@ -6129,3 +6129,6 @@ body > * {
 
 .navbar.navbar-help .nav-link.active {
   color: #009ed3 !important; }
+
+.nav a.nav-item {
+  color: #292b2c !important; }
