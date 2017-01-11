@@ -192,7 +192,7 @@
   		var header = document.querySelector('.sticky-top');
       var origOffsetY = header.offsetTop;
   
-      origOffsetY = $(document).offset().top;
+      origOffsetY = $(header).offset().top;
       
       function onScroll(e) {
         window.scrollY >= origOffsetY ? header.classList.add('sticky') :
