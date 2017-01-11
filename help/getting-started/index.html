@@ -188,15 +188,18 @@
                                                                                                                                                                       });
   </script>
   <script>
-    var header = document.querySelector('.nav.flex-column');
-    var origOffsetY = header.offsetTop;
-    alert(origOffsetY);
-    function onScroll(e) {
-      window.scrollY >= origOffsetY ? header.classList.add('sticky') :
-                                      header.classList.remove('sticky');
-    }
-    
-    document.addEventListener('scroll', onScroll);
+    $(document).ready(function() {
+  		var header = document.querySelector('.nav.flex-column');
+  var origOffsetY = header.offsetTop;
+  alert(origOffsetY);
+  function onScroll(e) {
+    window.scrollY >= origOffsetY ? header.classList.add('sticky') :
+                                    header.classList.remove('sticky');
+  }
+  
+  document.addEventListener('scroll', onScroll);
+      
+    });
   </script>
 
 
