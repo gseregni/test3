@@ -6132,6 +6132,8 @@ body > * {
 
 .nav a.nav-link {
   color: rgba(0, 0, 0, 0.5); }
+  .nav a.nav-link.active {
+    font-weight: bold; }
 
 .sticky {
   position: fixed;
