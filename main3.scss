@@ -925,7 +925,11 @@ body > * {
 }
 
 .nav a.nav-link {
+
     color: $navbar-light-color ;
+    &.active {
+      font-weight: bold;
+  }
   }
 
 .sticky {
