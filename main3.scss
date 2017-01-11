@@ -194,7 +194,7 @@ $font-size-sm:   .875rem !default;
 $font-size-xs:   .75rem !default;
 
 $font-weight-normal: 200 !default;
-$font-weight-bold: bold !default;
+$font-weight-bold: 300 !default;
 
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
@@ -301,7 +301,7 @@ $table-border-color:            $gray-lighter !default;
 $btn-padding-x:                  1rem !default;
 $btn-padding-y:                  .5rem !default;
 $btn-line-height:                1.25 !default;
-$btn-font-weight:                $font-weight-normal !default;
+$btn-font-weight:                $font-weight-bold !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
 $btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
