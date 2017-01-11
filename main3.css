@@ -163,7 +163,7 @@ kbd {
   kbd kbd {
     padding: 0;
     font-size: 100%;
-    font-weight: 300; }
+    font-weight: 400; }
 
 pre {
   display: block;
@@ -1251,7 +1251,7 @@ ul ol {
   margin-bottom: 0; }
 
 dt {
-  font-weight: 300; }
+  font-weight: 400; }
 
 dd {
   margin-bottom: .5rem;
@@ -1745,7 +1745,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn {
   display: inline-block;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.25;
   text-align: center;
   white-space: nowrap;
@@ -3256,7 +3256,7 @@ tbody.collapse.show {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -3344,7 +3344,7 @@ a.badge:hover {
   color: inherit; }
 
 .alert-link {
-  font-weight: 300; }
+  font-weight: 400; }
 
 .alert-dismissible .close {
   position: relative;
@@ -3622,7 +3622,7 @@ button.list-group-item-danger {
 .close {
   float: right;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -5989,7 +5989,7 @@ a.bg-inverse:hover {
   font-weight: 200; }
 
 .font-weight-bold {
-  font-weight: 300; }
+  font-weight: 400; }
 
 .font-italic {
   font-style: italic; }
@@ -6133,7 +6133,7 @@ body > * {
 .nav a.nav-link {
   color: rgba(0, 0, 0, 0.5); }
   .nav a.nav-link.active {
-    font-weight: bold; }
+    font-weight: 400; }
 
 .sticky {
   position: fixed;
