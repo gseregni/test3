@@ -916,3 +916,9 @@ body > * {
   flex-direction: column;
   justify-content:center;
 }
+
+.navbar.navbar-help {
+  .nav-link.active {
+    color: #009ed3 !important;
+  }
+}
