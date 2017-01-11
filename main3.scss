@@ -194,7 +194,7 @@ $font-size-sm:   .875rem !default;
 $font-size-xs:   .75rem !default;
 
 $font-weight-normal: 200 !default;
-$font-weight-bold: 300 !default;
+$font-weight-bold: 400 !default;
 
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
@@ -928,7 +928,7 @@ body > * {
 
     color: $navbar-light-color ;
     &.active {
-      font-weight: bold;
+      font-weight: $font-weight-bold;
   }
   }
 
