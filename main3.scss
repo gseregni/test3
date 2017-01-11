@@ -5,11 +5,12 @@
 // the Bootstrap defaults without modifying key, versioned files.
  
 $brand-primary:             #009ed3;
-$display1-size: 2.0rem !default;
-$display2-size: 2.0rem !default;
-$display3-size: 1.8rem !default;
+$display1-size: 1.85rem !default;
+$display2-size: 1.75rem !default;
+$display3-size: 1.6rem !default;
 $display4-size: 1.5rem !default;
 $font-weight-base: 200 !default;
+$font-size-base: 0.9rem !default; // Assumes the browser default, typically `16px`
 
 
 // Table of Contents
