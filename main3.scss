@@ -927,3 +927,8 @@ body > * {
 .nav a.nav-link {
     color: $navbar-light-color ;
   }
+
+.sticky {
+  position: fixed;
+  top: 00px;
+}
