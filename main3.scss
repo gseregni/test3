@@ -4,7 +4,7 @@
 // Copy settings from this file into the provided `_custom.scss` to override
 // the Bootstrap defaults without modifying key, versioned files.
  
-$brand-primary:             #009ed3;
+$brand-primary:             red;
 $display1-size: 2.5rem !default;
 $display2-size: 1.75rem !default;
 $display3-size: 1.6rem !default;
@@ -80,7 +80,7 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             #009ed3;
+$brand-primary:             red;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;
