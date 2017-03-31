@@ -615,13 +615,13 @@ fieldset[disabled] a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 0.55rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.5rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
@@ -1299,7 +1299,7 @@ pre {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 0.5rem;
   color: #636c72;
   white-space: nowrap; }
 
@@ -1366,12 +1366,12 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.5rem - 1px * 2);
   padding-bottom: calc(0.5rem - 1px * 2);
-  font-size: 1.25rem; }
+  font-size: 0.55rem; }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem - 1px * 2);
   padding-bottom: calc(0.25rem - 1px * 2);
-  font-size: 0.875rem; }
+  font-size: 0.5rem; }
 
 .col-form-legend {
   padding-top: 0.5rem;
@@ -1400,27 +1400,27 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.5rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: calc(1.8125rem + 2px); }
+  height: calc(1.25rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 0.55rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: calc(2.875rem + 2px); }
+  height: calc(1.825rem + 2px); }
 
 .form-group {
   margin-bottom: 1rem; }
@@ -2440,12 +2440,12 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .input-group-addon.form-control-sm, .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn {
     padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.5rem;
     border-radius: 0.2rem; }
   .input-group-addon.form-control-lg, .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
     padding: 0.5rem 1rem;
-    font-size: 1.25rem;
+    font-size: 0.55rem;
     border-radius: 0.3rem; }
   .input-group-addon input[type="radio"],
   .input-group-addon input[type="checkbox"] {
@@ -2844,10 +2844,10 @@ button.list-group-item-danger {
 .navbar-brand {
   display: inline-block;
   align-self: flex-start;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.8375rem;
+  padding-bottom: 0.8375rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 0.55rem;
   line-height: inherit;
   white-space: nowrap; }
   .navbar-brand:focus,
@@ -2875,7 +2875,7 @@ button.list-group-item-danger {
 .navbar-toggler {
   align-self: flex-start;
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 0.55rem;
   line-height: 1;
   background: transparent;
   border: 1px solid transparent;
@@ -3141,7 +3141,7 @@ button.list-group-item-danger {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem; }
+  font-size: 0.55rem; }
 
 .pagination-lg .page-item:first-child .page-link {
   border-top-left-radius: 0.3rem;
@@ -3153,7 +3153,7 @@ button.list-group-item-danger {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem; }
+  font-size: 0.5rem; }
 
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
@@ -3185,7 +3185,7 @@ button.list-group-item-danger {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.5rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -3833,7 +3833,7 @@ template {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.5rem;
   word-wrap: break-word;
   opacity: 0; }
   .tooltip.show {
