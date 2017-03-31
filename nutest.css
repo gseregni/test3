@@ -12020,6 +12020,6 @@ body > * {
   background-repeat: none;
   background-position: center; }
 
-@media (min-width: null) and (max-width: 575px) {
+@media (min-width: 576px) and (max-width: 767px) {
   h1 {
-    color: red; } }
+    color: red !important; } }
