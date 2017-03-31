@@ -320,10 +320,10 @@ body > * {
   background-repeat: none;
   background-position: center ;
 }
-
-@include media-breakpoint-only(xs) {
+ 
+@include media-breakpoint-only(sm) {
   h1 {
-    color:red;
+    color:red !important;
   }
 }
 .hidden-xs {
